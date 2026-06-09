@@ -1,0 +1,12 @@
+[
+  {
+    "id": "portfolio-foundation",
+    "title": "Gautam's Portfolio",
+    "description": "Production-grade portfolio foundation built with React, TypeScript, and Vite.",
+    "techStack": ["React", "TypeScript", "Vite"],
+    "github": null,
+    "demo": null,
+    "featured": true,
+    "status": "in-progress"
+  }
+]

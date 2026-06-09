@@ -1,0 +1,16 @@
+[
+  {
+    "id": "github",
+    "platform": "GitHub",
+    "label": "Gautam on GitHub",
+    "url": "https://github.com/gautam",
+    "username": "gautam"
+  },
+  {
+    "id": "linkedin",
+    "platform": "LinkedIn",
+    "label": "Gautam on LinkedIn",
+    "url": "https://www.linkedin.com/in/gautam",
+    "username": "gautam"
+  }
+]

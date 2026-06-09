@@ -1,0 +1,31 @@
+{
+  "categories": [
+    {
+      "id": "frontend",
+      "name": "Frontend",
+      "skills": [
+        {
+          "id": "react",
+          "name": "React",
+          "level": "working"
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "level": "working"
+        }
+      ]
+    },
+    {
+      "id": "tooling",
+      "name": "Tooling",
+      "skills": [
+        {
+          "id": "vite",
+          "name": "Vite",
+          "level": "working"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "milestones": [
+    {
+      "id": "portfolio-foundation",
+      "title": "Portfolio Foundation",
+      "description": "Created the React, TypeScript, and Vite engineering foundation.",
+      "startDate": "2026-06",
+      "endDate": null,
+      "type": "project"
+    }
+  ]
+}
