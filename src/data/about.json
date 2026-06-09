@@ -1,0 +1,133 @@
+{
+  "section": {
+    "eyebrow": "Identity System",
+    "title": "About Gautam",
+    "description": "A command-center briefing on the engineer behind the systems, products, and intelligent workflows."
+  },
+  "identity": {
+    "eyebrow": "Identity Analysis",
+    "title": "AI Assistant Briefing",
+    "description": "Gautam operates at the intersection of intelligent systems and full-stack product engineering, turning complex ideas into dependable software experiences.",
+    "roles": [
+      {
+        "id": "ai-engineer",
+        "label": "AI Engineer"
+      },
+      {
+        "id": "full-stack-developer",
+        "label": "Full Stack Developer"
+      },
+      {
+        "id": "system-builder",
+        "label": "System Builder"
+      },
+      {
+        "id": "problem-solver",
+        "label": "Problem Solver"
+      }
+    ]
+  },
+  "summary": {
+    "eyebrow": "Professional Story",
+    "title": "Building useful intelligence with product-level discipline",
+    "paragraphs": [
+      "Gautam builds software that connects thoughtful interface design, reliable engineering, and AI-powered capability. His work is grounded in clarity: understanding the user, shaping the system, and delivering experiences that feel precise instead of noisy.",
+      "He approaches development as a full-stack craft, moving from frontend interaction details to backend structure and system behavior with the same attention to maintainability, performance, and real-world usefulness."
+    ]
+  },
+  "currentFocus": {
+    "eyebrow": "Current Focus",
+    "title": "Engineering vectors currently active",
+    "description": "The portfolio identity system tracks the areas where Gautam is actively sharpening depth and building momentum.",
+    "areas": [
+      {
+        "id": "artificial-intelligence",
+        "title": "Artificial Intelligence",
+        "description": "Designing AI-assisted workflows, assistant experiences, and practical intelligence layers for modern applications."
+      },
+      {
+        "id": "full-stack-engineering",
+        "title": "Full Stack Engineering",
+        "description": "Building frontend and backend systems that stay clear, responsive, and maintainable as product complexity grows."
+      },
+      {
+        "id": "system-design",
+        "title": "System Design",
+        "description": "Structuring software around clean boundaries, durable data flow, and architecture that can evolve without friction."
+      },
+      {
+        "id": "developer-tooling",
+        "title": "Developer Tooling",
+        "description": "Improving how builders plan, ship, debug, and communicate through better tools and sharper workflows."
+      }
+    ]
+  },
+  "mission": {
+    "eyebrow": "Command Center Directive",
+    "title": "Mission",
+    "statement": "Build technology that makes complex work feel understandable, capable, and calm, with AI used as a practical amplifier rather than decoration."
+  },
+  "strengths": {
+    "eyebrow": "Core Strengths",
+    "title": "Signal profile",
+    "items": [
+      {
+        "id": "ai-development",
+        "title": "AI Development",
+        "description": "Translating AI capabilities into usable product experiences with clear interaction patterns."
+      },
+      {
+        "id": "backend-systems",
+        "title": "Backend Systems",
+        "description": "Designing data flow, service boundaries, and reliable application logic for scalable products."
+      },
+      {
+        "id": "frontend-engineering",
+        "title": "Frontend Engineering",
+        "description": "Creating responsive, accessible interfaces with polished details and strong component structure."
+      },
+      {
+        "id": "problem-solving",
+        "title": "Problem Solving",
+        "description": "Breaking ambiguous challenges into systems, decisions, and execution paths that can actually ship."
+      }
+    ]
+  },
+  "highlights": {
+    "eyebrow": "Quick Stats",
+    "title": "Operating snapshot",
+    "items": [
+      {
+        "id": "projects",
+        "value": "4+",
+        "label": "Projects",
+        "description": "Product and engineering builds across the portfolio roadmap."
+      },
+      {
+        "id": "technologies",
+        "value": "12+",
+        "label": "Technologies",
+        "description": "Tools spanning frontend, backend, data, and AI workflows."
+      },
+      {
+        "id": "repositories",
+        "value": "Active",
+        "label": "Repositories",
+        "description": "Codebases treated as evolving systems, not static demos."
+      },
+      {
+        "id": "learning-areas",
+        "value": "AI + Systems",
+        "label": "Learning Areas",
+        "description": "Current growth centered on intelligence, architecture, and product craft."
+      }
+    ]
+  },
+  "journeyPreview": {
+    "eyebrow": "Next Section",
+    "title": "Journey Timeline",
+    "description": "Continue into the timeline layer to see how Gautam's engineering path, learning, and future direction connect.",
+    "href": "#journey",
+    "actionLabel": "Open journey preview"
+  }
+}
