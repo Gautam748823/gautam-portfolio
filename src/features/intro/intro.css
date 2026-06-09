@@ -1,0 +1,283 @@
+.boot-sequence {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: var(--shell-space-lg);
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgb(5 8 22 / 0.96), rgb(2 3 10 / 0.98)),
+    radial-gradient(circle at 50% 40%, rgb(0 229 255 / 0.16), transparent 32rem);
+  color: var(--shell-white);
+  opacity: 1;
+  transition: opacity var(--shell-transition-slow), visibility var(--shell-transition-slow);
+}
+
+.boot-sequence::before,
+.boot-sequence::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+}
+
+.boot-sequence::before {
+  background-image:
+    linear-gradient(rgb(0 229 255 / 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(0 229 255 / 0.08) 1px, transparent 1px);
+  background-size: 4rem 4rem;
+  opacity: 0.24;
+}
+
+.boot-sequence::after {
+  background: linear-gradient(180deg, transparent, rgb(0 229 255 / 0.12), transparent);
+  block-size: 12rem;
+  animation: boot-scan 2800ms linear infinite;
+}
+
+.boot-sequence--exit {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.boot-sequence__panel {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 42rem);
+  padding: clamp(var(--shell-space-lg), 5vw, var(--shell-space-3xl));
+  border: 1px solid var(--shell-border-strong);
+  border-radius: var(--shell-radius-xl);
+  background: rgb(5 8 22 / 0.72);
+  box-shadow: var(--shell-shadow), var(--shell-glow-subtle);
+  backdrop-filter: blur(1.25rem);
+}
+
+.boot-sequence__eyebrow {
+  color: var(--shell-cyan);
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-bold);
+  letter-spacing: var(--shell-tracking-wide);
+  text-transform: uppercase;
+}
+
+.boot-sequence__terminal {
+  display: flex;
+  min-height: 4rem;
+  align-items: center;
+  gap: var(--shell-space-sm);
+  margin-top: var(--shell-space-lg);
+  color: var(--shell-white);
+  font-size: clamp(var(--shell-font-xl), 4vw, var(--shell-font-3xl));
+  font-weight: var(--shell-weight-semibold);
+  line-height: var(--shell-line-tight);
+}
+
+.boot-sequence__prompt {
+  color: var(--shell-cyan);
+}
+
+.boot-sequence__message {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  border-right: 2px solid var(--shell-cyan);
+  animation:
+    boot-type 520ms steps(32, end) both,
+    boot-caret 900ms step-end infinite;
+  white-space: nowrap;
+}
+
+.boot-sequence__log {
+  display: grid;
+  gap: var(--shell-space-sm);
+  margin-top: var(--shell-space-xl);
+  list-style: none;
+}
+
+.boot-sequence__log li {
+  display: flex;
+  align-items: center;
+  gap: var(--shell-space-sm);
+  color: var(--shell-muted);
+  font-size: var(--shell-font-sm);
+  transition: color var(--shell-transition);
+}
+
+.boot-sequence__log li span {
+  width: 0.55rem;
+  aspect-ratio: 1;
+  border: 1px solid var(--shell-border-strong);
+  border-radius: var(--shell-radius-full);
+  background: transparent;
+  transition: background var(--shell-transition), box-shadow var(--shell-transition);
+}
+
+.boot-sequence__log .boot-sequence__log-item--active {
+  color: var(--shell-white);
+}
+
+.boot-sequence__log .boot-sequence__log-item--active span {
+  background: var(--shell-cyan);
+  box-shadow: var(--shell-glow-subtle);
+}
+
+.hero-reveal {
+  display: inline-block;
+  opacity: 0;
+  transform: var(--hero-reveal-initial-transform);
+  animation: hero-reveal var(--hero-reveal-duration) var(--hero-reveal-easing)
+    var(--hero-reveal-delay) forwards;
+}
+
+.ai-orb {
+  position: relative;
+  display: grid;
+  width: min(72vw, 18rem);
+  aspect-ratio: 1;
+  margin: 0 auto;
+  place-items: center;
+  border-radius: var(--shell-radius-full);
+  background:
+    radial-gradient(circle, rgb(255 255 255 / 0.18) 0 8%, transparent 9%),
+    radial-gradient(circle, rgb(0 229 255 / 0.24), transparent 58%);
+  filter: drop-shadow(0 0 2.5rem rgb(0 229 255 / 0.28));
+  animation: ai-orb-idle 4200ms ease-in-out infinite;
+}
+
+.ai-orb__halo,
+.ai-orb__core,
+.ai-orb__scan {
+  position: absolute;
+  border-radius: var(--shell-radius-full);
+}
+
+.ai-orb__halo {
+  border: 1px solid rgb(0 229 255 / 0.34);
+  box-shadow: inset 0 0 2rem rgb(0 229 255 / 0.08);
+}
+
+.ai-orb__halo--outer {
+  inset: 3%;
+  animation: ai-orb-pulse 3200ms ease-in-out infinite;
+}
+
+.ai-orb__halo--middle {
+  inset: 18%;
+  border-style: dashed;
+  animation: ai-orb-rotate 12000ms linear infinite;
+}
+
+.ai-orb__halo--inner {
+  inset: 34%;
+  background: radial-gradient(circle, rgb(0 229 255 / 0.18), transparent 68%);
+  animation: ai-orb-pulse 2400ms ease-in-out infinite reverse;
+}
+
+.ai-orb__core {
+  width: 18%;
+  aspect-ratio: 1;
+  background: var(--shell-cyan);
+  box-shadow: 0 0 2rem rgb(0 229 255 / 0.82), 0 0 4rem rgb(0 229 255 / 0.32);
+}
+
+.ai-orb__scan {
+  inset: 10%;
+  background: linear-gradient(180deg, transparent 45%, rgb(255 255 255 / 0.2), transparent 55%);
+  opacity: 0.5;
+  animation: ai-orb-scan 3600ms ease-in-out infinite;
+}
+
+@keyframes boot-type {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes boot-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes boot-scan {
+  from {
+    transform: translateY(-12rem);
+  }
+
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes hero-reveal {
+  to {
+    opacity: 1;
+    transform: var(--hero-reveal-final-transform);
+  }
+}
+
+@keyframes ai-orb-idle {
+  50% {
+    transform: translate3d(0, -0.4rem, 0) scale(1.02);
+  }
+}
+
+@keyframes ai-orb-pulse {
+  50% {
+    opacity: 0.72;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes ai-orb-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ai-orb-scan {
+  50% {
+    transform: translateY(12%);
+  }
+}
+
+@media (max-width: 48rem) {
+  .boot-sequence__terminal {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .boot-sequence__message {
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .boot-sequence,
+  .boot-sequence::after,
+  .boot-sequence__message,
+  .boot-sequence__log li,
+  .boot-sequence__log li span,
+  .hero-reveal,
+  .ai-orb,
+  .ai-orb__halo,
+  .ai-orb__scan {
+    animation: none;
+    transition: none;
+  }
+
+  .boot-sequence__message {
+    border-right: 0;
+    width: auto;
+  }
+
+  .hero-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -13,6 +13,7 @@ import {
   typography,
 } from '@/design-system/tokens';
 import type { TokenStyle } from '@/design-system/styleTypes';
+import { BootSequence, useIntroExperience } from '@/features/intro';
 import { ContactSection } from '@/sections/ContactSection';
 import { HeroSection } from '@/sections/HeroSection';
 import { PlaceholderSection } from '@/sections/PlaceholderSection';
@@ -25,6 +26,7 @@ import './shell.css';
 export function AppShell() {
   const [portfolio, setPortfolio] = useState<PortfolioMetadata | null>(null);
   const [socials, setSocials] = useState<readonly SocialLink[]>([]);
+  const { completeIntro, isBooting } = useIntroExperience();
 
   useEffect(() => {
     let isActive = true;
@@ -94,11 +96,16 @@ export function AppShell() {
   };
 
   return (
-    <PageLayout className="app-shell" style={shellStyle}>
+    <PageLayout
+      aria-busy={isBooting}
+      className={`app-shell${isBooting ? ' app-shell--booting' : ''}`}
+      style={shellStyle}
+    >
       <a className="skip-link" href="#main-content">
         Skip to main content
       </a>
       <BackgroundLayers />
+      {isBooting ? <BootSequence onComplete={completeIntro} /> : null}
       <Navbar />
 
       <main id="main-content">
