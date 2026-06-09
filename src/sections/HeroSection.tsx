@@ -1,5 +1,6 @@
 import { Badge, Card } from '@/components/ui';
 import { Container, Section, Stack } from '@/components/layout';
+import { AIOrb, HeroReveal } from '@/features/intro';
 
 export function HeroSection() {
   return (
@@ -9,11 +10,17 @@ export function HeroSection() {
           <Stack className="hero-section__content" gap="lg">
             <Badge>AI Command Center</Badge>
             <div>
-              <h1 className="hero-section__title">Gautam's Portfolio</h1>
+              <h1 className="hero-section__title" aria-label="Gautam">
+                <HeroReveal index={0}>Gautam</HeroReveal>
+              </h1>
               <p className="hero-section__roles">
-                <span>AI Engineer</span>
+                <HeroReveal index={1}>
+                  <span>AI Engineer</span>
+                </HeroReveal>
                 <span aria-hidden="true">/</span>
-                <span>Full Stack Developer</span>
+                <HeroReveal index={2}>
+                  <span>Full Stack Developer</span>
+                </HeroReveal>
               </p>
             </div>
             <p className="hero-section__description">
@@ -30,18 +37,14 @@ export function HeroSection() {
             </Stack>
           </Stack>
 
-          <Card className="assistant-placeholder" variant="glass">
-            <div aria-hidden="true" className="assistant-placeholder__signal">
-              <span />
-              <span />
-              <span />
-            </div>
-            <p className="assistant-placeholder__label">Digital Assistant</p>
-            <h2>Intelligence layer reserved</h2>
-            <p>Phase 2: Interactive AI Assistant Coming Soon</p>
+          <Card className="assistant-core" variant="glass" aria-labelledby="assistant-core-title">
+            <AIOrb />
+            <p className="assistant-core__label">Digital Assistant</p>
+            <h2 id="assistant-core-title">AI Core Online</h2>
+            <p>Neural intelligence layer initialized for guided portfolio exploration.</p>
             <div className="assistant-placeholder__status">
               <span aria-hidden="true" />
-              Foundation online
+              Assistant active
             </div>
           </Card>
         </div>
