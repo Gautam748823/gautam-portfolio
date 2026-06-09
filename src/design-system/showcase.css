@@ -1,0 +1,56 @@
+.showcase__intro {
+  padding-top: var(--showcase-space-xl);
+}
+
+.showcase__card-title {
+  margin-bottom: var(--showcase-space-sm);
+  font-size: var(--showcase-title-size);
+}
+
+.showcase__card-copy {
+  color: var(--showcase-muted);
+  line-height: var(--showcase-line-height);
+}
+
+.showcase__display {
+  color: var(--showcase-accent);
+  font-size: var(--showcase-display-size);
+  line-height: var(--showcase-display-line-height);
+  letter-spacing: var(--showcase-display-spacing);
+}
+
+.showcase__heading {
+  font-size: var(--showcase-heading-size);
+  line-height: var(--showcase-heading-line-height);
+}
+
+.showcase__body {
+  max-width: var(--showcase-readable-width);
+  color: var(--showcase-muted);
+  line-height: var(--showcase-body-line-height);
+}
+
+.showcase__spacing-row {
+  display: grid;
+  grid-template-columns: var(--showcase-label-width) minmax(0, 1fr);
+  align-items: center;
+  gap: var(--showcase-space-md);
+}
+
+.showcase__spacing-label {
+  color: var(--showcase-muted);
+  font-size: var(--showcase-label-size);
+}
+
+.showcase__spacing-bar {
+  width: var(--spacing-example-width);
+  max-width: 100%;
+  height: var(--showcase-space-sm);
+  border-radius: var(--showcase-radius);
+  background: var(--showcase-accent);
+}
+
+.showcase__divider {
+  border: 0;
+  border-top: 1px solid var(--showcase-border);
+}
