@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { PageLayout } from '@/components/layout';
-import { portfolioLoader, socialLoader } from '@/data';
+import { aboutLoader, portfolioLoader, socialLoader } from '@/data';
 import {
   colors,
   glows,
@@ -13,17 +13,19 @@ import {
   typography,
 } from '@/design-system/tokens';
 import type { TokenStyle } from '@/design-system/styleTypes';
+import { AboutSection } from '@/features/about';
 import { BootSequence, useIntroExperience } from '@/features/intro';
 import { ContactSection } from '@/sections/ContactSection';
 import { HeroSection } from '@/sections/HeroSection';
 import { PlaceholderSection } from '@/sections/PlaceholderSection';
-import type { PortfolioMetadata, SocialLink } from '@/types';
+import type { AboutContent, PortfolioMetadata, SocialLink } from '@/types';
 import { BackgroundLayers } from './BackgroundLayers';
 import { Footer } from './Footer';
 import { Navbar } from './Navbar';
 import './shell.css';
 
 export function AppShell() {
+  const [about, setAbout] = useState<AboutContent | null>(null);
   const [portfolio, setPortfolio] = useState<PortfolioMetadata | null>(null);
   const [socials, setSocials] = useState<readonly SocialLink[]>([]);
   const { completeIntro, isBooting } = useIntroExperience();
@@ -31,9 +33,10 @@ export function AppShell() {
   useEffect(() => {
     let isActive = true;
 
-    void Promise.all([portfolioLoader.getAll(), socialLoader.getAll()]).then(
-      ([portfolioData, socialData]) => {
+    void Promise.all([aboutLoader.getAll(), portfolioLoader.getAll(), socialLoader.getAll()]).then(
+      ([aboutData, portfolioData, socialData]) => {
         if (isActive) {
+          setAbout(aboutData);
           setPortfolio(portfolioData);
           setSocials(socialData);
         }
@@ -110,12 +113,7 @@ export function AppShell() {
 
       <main id="main-content">
         <HeroSection />
-        <PlaceholderSection
-          description="A focused introduction to Gautam's engineering approach, values, and professional direction will live here."
-          eyebrow="Profile"
-          id="about"
-          title="About"
-        />
+        <AboutSection about={about} />
         <PlaceholderSection
           description="Selected engineering work will be presented here through structured project data in a future phase."
           eyebrow="Work"
