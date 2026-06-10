@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { PageLayout } from '@/components/layout';
-import { aboutLoader, portfolioLoader, socialLoader } from '@/data';
+import { aboutLoader, portfolioLoader, socialLoader, timelineLoader } from '@/data';
 import {
   colors,
   glows,
@@ -15,10 +15,11 @@ import {
 import type { TokenStyle } from '@/design-system/styleTypes';
 import { AboutSection } from '@/features/about';
 import { BootSequence, useIntroExperience } from '@/features/intro';
+import { JourneyTimeline } from '@/features/timeline';
 import { ContactSection } from '@/sections/ContactSection';
 import { HeroSection } from '@/sections/HeroSection';
 import { PlaceholderSection } from '@/sections/PlaceholderSection';
-import type { AboutContent, PortfolioMetadata, SocialLink } from '@/types';
+import type { AboutContent, PortfolioMetadata, SocialLink, TimelineData } from '@/types';
 import { BackgroundLayers } from './BackgroundLayers';
 import { Footer } from './Footer';
 import { Navbar } from './Navbar';
@@ -28,20 +29,25 @@ export function AppShell() {
   const [about, setAbout] = useState<AboutContent | null>(null);
   const [portfolio, setPortfolio] = useState<PortfolioMetadata | null>(null);
   const [socials, setSocials] = useState<readonly SocialLink[]>([]);
+  const [timeline, setTimeline] = useState<TimelineData | null>(null);
   const { completeIntro, isBooting } = useIntroExperience();
 
   useEffect(() => {
     let isActive = true;
 
-    void Promise.all([aboutLoader.getAll(), portfolioLoader.getAll(), socialLoader.getAll()]).then(
-      ([aboutData, portfolioData, socialData]) => {
+    void Promise.all([
+      aboutLoader.getAll(),
+      portfolioLoader.getAll(),
+      socialLoader.getAll(),
+      timelineLoader.getTimeline(),
+    ]).then(([aboutData, portfolioData, socialData, timelineData]) => {
         if (isActive) {
           setAbout(aboutData);
           setPortfolio(portfolioData);
           setSocials(socialData);
+          setTimeline(timelineData);
         }
-      },
-    );
+      });
 
     return () => {
       isActive = false;
@@ -114,12 +120,7 @@ export function AppShell() {
       <main id="main-content">
         <HeroSection />
         <AboutSection about={about} />
-        <PlaceholderSection
-          description="Selected engineering work will be presented here through structured project data in a future phase."
-          eyebrow="Work"
-          id="projects"
-          title="Projects"
-        />
+        <JourneyTimeline timeline={timeline} />
         <PlaceholderSection
           description="Technical capabilities and the future neural skills graph will connect to this section architecture."
           eyebrow="Capabilities"
@@ -127,10 +128,10 @@ export function AppShell() {
           title="Skills"
         />
         <PlaceholderSection
-          description="Professional milestones, learning, and meaningful transitions will form the journey experience."
-          eyebrow="Path"
-          id="journey"
-          title="Journey"
+          description="Selected engineering work will be presented here through structured project data in a future phase."
+          eyebrow="Work"
+          id="projects"
+          title="Projects"
         />
         <ContactSection email={portfolio?.email} />
       </main>
