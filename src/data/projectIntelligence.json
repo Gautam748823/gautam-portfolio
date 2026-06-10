@@ -1,0 +1,197 @@
+[
+  {
+    "id": "ai-meeting-lecture-note-taker",
+    "slug": "ai-meeting-lecture-note-taker",
+    "title": "AI Meeting & Lecture Note Taker",
+    "tagline": "Transforms long sessions into structured, searchable intelligence.",
+    "category": "AI",
+    "status": "active",
+    "featured": true,
+    "description": "An AI-assisted note-taking system that captures meetings or lectures, transcribes speech, extracts decisions, and organizes summaries for review.",
+    "problem": "Students and teams lose important details in long spoken sessions, especially when action items, definitions, and decisions are scattered across the conversation.",
+    "solution": "The system converts audio into text, segments the transcript, and produces concise summaries, key points, and follow-up items through an AI processing layer.",
+    "architecture": ["Audio Capture", "Transcription Layer", "AI Summary Engine", "Structured Notes Store", "Review Interface"],
+    "technologies": ["React", "FastAPI", "Whisper", "Supabase", "PostgreSQL", "LLMs", "TypeScript"],
+    "highlights": [
+      "AI-generated summaries with action-item extraction",
+      "Transcript-first workflow for traceable notes",
+      "Search-ready note structure for later retrieval"
+    ],
+    "challenges": [
+      "Handling noisy audio and long-form transcripts",
+      "Keeping summaries concise without losing important context",
+      "Designing a review flow that feels useful instead of overwhelming"
+    ],
+    "outcomes": [
+      "Reduced manual note cleanup after meetings and lectures",
+      "Created a foundation for future retrieval and study workflows",
+      "Demonstrated practical AI product thinking across frontend, backend, and model orchestration"
+    ],
+    "githubUrl": null,
+    "demoUrl": null,
+    "image": "/project-intelligence/ai-meeting-notes.jpg",
+    "aiRelated": true,
+    "complexity": "expert",
+    "year": 2026,
+    "repository": null,
+    "stars": null,
+    "commits": null,
+    "lastUpdated": null
+  },
+  {
+    "id": "wildlife-conservation-species-identification",
+    "slug": "wildlife-conservation-species-identification",
+    "title": "Wildlife Conservation & Species Identification",
+    "tagline": "Computer vision support for field conservation workflows.",
+    "category": "Research",
+    "status": "prototype",
+    "featured": true,
+    "description": "A research-oriented species identification system designed to help classify wildlife imagery and support conservation monitoring.",
+    "problem": "Conservation teams often work with large volumes of camera-trap or field images that are slow to classify manually.",
+    "solution": "The project applies computer vision classification to identify likely species, record metadata, and prepare reviewed observations for conservation analysis.",
+    "architecture": ["Image Intake", "Preprocessing", "Vision Model", "Species Confidence Ranking", "Observation Store"],
+    "technologies": ["Python", "TensorFlow", "OpenCV", "React", "FastAPI", "Firestore", "Computer Vision"],
+    "highlights": [
+      "Model-ready image workflow for field observations",
+      "Confidence-ranked identification results",
+      "Designed for human review before conservation use"
+    ],
+    "challenges": [
+      "Managing varied lighting, motion blur, and partial animal visibility",
+      "Representing model confidence clearly for non-technical users",
+      "Balancing research flexibility with product-level interface clarity"
+    ],
+    "outcomes": [
+      "Established an AI research pattern for image classification projects",
+      "Created a recruiter-friendly example of mission-driven computer vision",
+      "Prepared the system for dataset expansion and future analytics"
+    ],
+    "githubUrl": null,
+    "demoUrl": null,
+    "image": "/project-intelligence/wildlife-identification.jpg",
+    "aiRelated": true,
+    "complexity": "advanced",
+    "year": 2026,
+    "repository": null,
+    "stars": null,
+    "commits": null,
+    "lastUpdated": null
+  },
+  {
+    "id": "helmet-violation-detection-system",
+    "slug": "helmet-violation-detection-system",
+    "title": "Helmet Violation Detection System",
+    "tagline": "Real-time safety detection using object recognition pipelines.",
+    "category": "Computer Vision",
+    "status": "active",
+    "featured": true,
+    "description": "A computer vision system that detects riders and helmet compliance from video streams for traffic safety monitoring.",
+    "problem": "Manual helmet violation monitoring is slow, inconsistent, and difficult to scale across busy traffic footage.",
+    "solution": "The system uses object detection to identify riders, evaluate helmet presence, and prepare violation events for review or reporting.",
+    "architecture": ["Video Stream", "Frame Extraction", "YOLOv8 Detection", "Violation Logic", "Review Dashboard"],
+    "technologies": ["YOLOv8", "OpenCV", "Python", "FastAPI", "React", "Node.js", "Computer Vision"],
+    "highlights": [
+      "Detection pipeline prepared for real-time video inputs",
+      "Separation between model inference and violation review",
+      "Clear safety-focused use case with measurable system behavior"
+    ],
+    "challenges": [
+      "Reducing false positives in crowded or low-resolution footage",
+      "Keeping inference results explainable for review",
+      "Designing system boundaries for future camera integrations"
+    ],
+    "outcomes": [
+      "Showcases applied object detection beyond demo images",
+      "Strengthens the portfolio's AI and backend architecture signal",
+      "Provides a path toward analytics, alerts, and compliance dashboards"
+    ],
+    "githubUrl": null,
+    "demoUrl": null,
+    "image": "/project-intelligence/helmet-detection.jpg",
+    "aiRelated": true,
+    "complexity": "expert",
+    "year": 2026,
+    "repository": null,
+    "stars": null,
+    "commits": null,
+    "lastUpdated": null
+  },
+  {
+    "id": "ai-plant-disease-detection",
+    "slug": "ai-plant-disease-detection",
+    "title": "AI Plant Disease Detection",
+    "tagline": "Early crop-health screening through image intelligence.",
+    "category": "AI",
+    "status": "prototype",
+    "featured": false,
+    "description": "An image-based AI workflow that helps identify plant disease patterns from leaf photos and returns practical next-step guidance.",
+    "problem": "Farmers and gardeners may miss early disease signals or lack immediate access to expert diagnosis.",
+    "solution": "The application accepts plant images, applies disease classification, and presents likely conditions with confidence, prevention notes, and care recommendations.",
+    "architecture": ["Image Upload", "Preprocessing", "TensorFlow Model", "Diagnosis API", "Guidance Interface"],
+    "technologies": ["React", "TensorFlow", "FastAPI", "OpenCV", "Supabase", "Python", "TypeScript"],
+    "highlights": [
+      "Image-first diagnosis flow",
+      "Confidence-aware result presentation",
+      "Practical care guidance paired with model output"
+    ],
+    "challenges": [
+      "Distinguishing visually similar disease patterns",
+      "Communicating uncertainty responsibly",
+      "Keeping the workflow fast on common device images"
+    ],
+    "outcomes": [
+      "Demonstrates responsible AI communication in a high-impact domain",
+      "Adds another strong computer vision case study to the project layer",
+      "Prepared for future dataset growth and model evaluation tracking"
+    ],
+    "githubUrl": null,
+    "demoUrl": null,
+    "image": "/project-intelligence/plant-disease.jpg",
+    "aiRelated": true,
+    "complexity": "advanced",
+    "year": 2026,
+    "repository": null,
+    "stars": null,
+    "commits": null,
+    "lastUpdated": null
+  },
+  {
+    "id": "crowdscope-crowd-monitoring-system",
+    "slug": "crowdscope-crowd-monitoring-system",
+    "title": "CrowdScope Crowd Monitoring System",
+    "tagline": "Operational crowd intelligence for density and safety awareness.",
+    "category": "Backend",
+    "status": "concept",
+    "featured": false,
+    "description": "A crowd monitoring concept that combines data ingestion, vision-assisted counting, and dashboard metrics for public-space awareness.",
+    "problem": "Event and facility operators need timely visibility into crowd density, hotspots, and trend changes before conditions become unsafe.",
+    "solution": "CrowdScope structures camera or sensor inputs into monitored zones, computes density signals, and surfaces active system metrics for operators.",
+    "architecture": ["Sensor Inputs", "API Layer", "AI Layer", "Metrics Store", "Operator Dashboard"],
+    "technologies": ["Node.js", "FastAPI", "OpenCV", "Firestore", "React", "Supabase", "Analytics"],
+    "highlights": [
+      "Backend-first architecture prepared for streaming inputs",
+      "Zone-based monitoring model",
+      "Dashboard-ready metrics for active system visibility"
+    ],
+    "challenges": [
+      "Designing a scalable event ingestion model",
+      "Turning raw detections into useful operational signals",
+      "Planning privacy-conscious monitoring boundaries"
+    ],
+    "outcomes": [
+      "Shows system design judgment beyond a single model demo",
+      "Connects AI, backend, and dashboard engineering in one workflow",
+      "Prepared for future simulation data and GitHub analytics integration"
+    ],
+    "githubUrl": null,
+    "demoUrl": null,
+    "image": "/project-intelligence/crowdscope.jpg",
+    "aiRelated": true,
+    "complexity": "advanced",
+    "year": 2026,
+    "repository": null,
+    "stars": null,
+    "commits": null,
+    "lastUpdated": null
+  }
+]

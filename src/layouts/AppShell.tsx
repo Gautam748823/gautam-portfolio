@@ -1,6 +1,13 @@
 import { useEffect, useState } from 'react';
 import { PageLayout } from '@/components/layout';
-import { aboutLoader, portfolioLoader, skillGraphLoader, socialLoader, timelineLoader } from '@/data';
+import {
+  aboutLoader,
+  portfolioLoader,
+  projectIntelligenceLoader,
+  skillGraphLoader,
+  socialLoader,
+  timelineLoader,
+} from '@/data';
 import {
   colors,
   glows,
@@ -15,14 +22,15 @@ import {
 import type { TokenStyle } from '@/design-system/styleTypes';
 import { AboutSection } from '@/features/about';
 import { BootSequence, useIntroExperience } from '@/features/intro';
+import { ProjectsSection } from '@/features/projects';
 import { SkillsSection } from '@/features/skills';
 import { JourneyTimeline } from '@/features/timeline';
 import { ContactSection } from '@/sections/ContactSection';
 import { HeroSection } from '@/sections/HeroSection';
-import { PlaceholderSection } from '@/sections/PlaceholderSection';
 import type {
   AboutContent,
   PortfolioMetadata,
+  ProjectIntelligence,
   SkillGraphData,
   SocialLink,
   TimelineData,
@@ -35,6 +43,7 @@ import './shell.css';
 export function AppShell() {
   const [about, setAbout] = useState<AboutContent | null>(null);
   const [portfolio, setPortfolio] = useState<PortfolioMetadata | null>(null);
+  const [projects, setProjects] = useState<readonly ProjectIntelligence[]>([]);
   const [skillGraph, setSkillGraph] = useState<SkillGraphData | null>(null);
   const [socials, setSocials] = useState<readonly SocialLink[]>([]);
   const [timeline, setTimeline] = useState<TimelineData | null>(null);
@@ -46,13 +55,15 @@ export function AppShell() {
     void Promise.all([
       aboutLoader.getAll(),
       portfolioLoader.getAll(),
+      projectIntelligenceLoader.getAllProjects(),
       skillGraphLoader.getAll(),
       socialLoader.getAll(),
       timelineLoader.getTimeline(),
-    ]).then(([aboutData, portfolioData, skillGraphData, socialData, timelineData]) => {
+    ]).then(([aboutData, portfolioData, projectData, skillGraphData, socialData, timelineData]) => {
         if (isActive) {
           setAbout(aboutData);
           setPortfolio(portfolioData);
+          setProjects(projectData);
           setSkillGraph(skillGraphData);
           setSocials(socialData);
           setTimeline(timelineData);
@@ -132,12 +143,7 @@ export function AppShell() {
         <AboutSection about={about} />
         <JourneyTimeline timeline={timeline} />
         <SkillsSection skillGraph={skillGraph} />
-        <PlaceholderSection
-          description="Selected engineering work will be presented here through structured project data in a future phase."
-          eyebrow="Work"
-          id="projects"
-          title="Projects"
-        />
+        <ProjectsSection projects={projects} />
         <ContactSection email={portfolio?.email} />
       </main>
 
