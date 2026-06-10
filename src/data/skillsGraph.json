@@ -1,0 +1,81 @@
+{
+  "section": {
+    "eyebrow": "Capabilities",
+    "title": "Skills",
+    "description": "A neural map of engineering strengths across interfaces, platforms, AI systems, infrastructure, and delivery workflows."
+  },
+  "skills": [
+    {
+      "id": "frontend",
+      "name": "Frontend Engineering",
+      "category": "frontend",
+      "level": 88,
+      "description": "Building responsive, accessible, state-aware interfaces with strong component boundaries and polished interaction details.",
+      "technologies": ["React", "TypeScript", "Vite", "CSS Modules", "Responsive UI", "Accessibility"],
+      "connections": ["backend", "ai-engineering", "developer-tools", "system-design"]
+    },
+    {
+      "id": "backend",
+      "name": "Backend Engineering",
+      "category": "backend",
+      "level": 82,
+      "description": "Designing reliable service layers, API contracts, validation paths, and integration points that keep product workflows steady.",
+      "technologies": ["Node.js", "Express", "REST APIs", "Authentication", "Validation", "Service Design"],
+      "connections": ["frontend", "databases", "cloud", "system-design"]
+    },
+    {
+      "id": "ai-engineering",
+      "name": "AI Engineering",
+      "category": "ai",
+      "level": 86,
+      "description": "Composing AI-assisted workflows with structured prompts, retrieval-ready data models, evaluation loops, and human-centered UX.",
+      "technologies": ["LLMs", "Prompt Design", "RAG", "Embeddings", "Agents", "Evaluation"],
+      "connections": ["frontend", "backend", "databases", "developer-tools"]
+    },
+    {
+      "id": "databases",
+      "name": "Databases",
+      "category": "data",
+      "level": 78,
+      "description": "Modeling data for clarity, query performance, and maintainability across relational and document-oriented storage patterns.",
+      "technologies": ["PostgreSQL", "MongoDB", "SQL", "Schema Design", "Indexes", "Data Modeling"],
+      "connections": ["backend", "ai-engineering", "cloud", "system-design"]
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud",
+      "category": "cloud",
+      "level": 74,
+      "description": "Deploying web systems with practical cloud primitives, environment isolation, observability hooks, and cost-conscious architecture.",
+      "technologies": ["AWS", "Vercel", "Serverless", "CDN", "Environment Config", "Observability"],
+      "connections": ["backend", "databases", "devops", "system-design"]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps",
+      "category": "operations",
+      "level": 76,
+      "description": "Automating build, test, release, and monitoring loops so teams can ship smaller changes with stronger confidence.",
+      "technologies": ["GitHub Actions", "CI/CD", "Docker", "Linting", "Build Pipelines", "Release Checks"],
+      "connections": ["cloud", "developer-tools", "system-design"]
+    },
+    {
+      "id": "system-design",
+      "name": "System Design",
+      "category": "architecture",
+      "level": 81,
+      "description": "Connecting product requirements to durable technical plans through modular boundaries, scaling assumptions, and failure planning.",
+      "technologies": ["Architecture", "Scalability", "API Design", "Reliability", "Tradeoff Analysis", "Documentation"],
+      "connections": ["frontend", "backend", "databases", "cloud", "devops", "developer-tools"]
+    },
+    {
+      "id": "developer-tools",
+      "name": "Developer Tools",
+      "category": "tooling",
+      "level": 84,
+      "description": "Creating local workflows, automation helpers, and quality gates that shorten feedback cycles and make engineering feel smoother.",
+      "technologies": ["Git", "Testing", "ESLint", "Prettier", "CLI Workflows", "DX Automation"],
+      "connections": ["frontend", "ai-engineering", "devops", "system-design"]
+    }
+  ]
+}

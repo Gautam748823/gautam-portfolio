@@ -3,5 +3,6 @@ export * from './About';
 export * from './Portfolio';
 export * from './Project';
 export * from './Skill';
+export * from './SkillGraph';
 export * from './Social';
 export * from './Timeline';
