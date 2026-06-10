@@ -5,9 +5,9 @@ import { isEscapeKey } from '@/utils/accessibility';
 const navigationLinks = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#skills', label: 'Skills' },
   { href: '#journey', label: 'Journey' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#projects', label: 'Projects' },
   { href: '#contact', label: 'Contact' },
 ] as const;
 

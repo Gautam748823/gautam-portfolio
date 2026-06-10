@@ -1,12 +1,164 @@
 {
+  "section": {
+    "eyebrow": "Journey System",
+    "title": "Journey Timeline",
+    "description": "A structured briefing of Gautam's engineering path, active learning signals, shipped foundations, and future roadmap."
+  },
+  "filters": {
+    "allLabel": "All Signals"
+  },
+  "categories": [
+    {
+      "id": "education",
+      "label": "Education",
+      "description": "Formal learning and academic foundations."
+    },
+    {
+      "id": "ai",
+      "label": "AI",
+      "description": "Artificial intelligence learning, experiments, and applied systems."
+    },
+    {
+      "id": "development",
+      "label": "Development",
+      "description": "Software engineering practice across frontend, backend, and architecture."
+    },
+    {
+      "id": "projects",
+      "label": "Projects",
+      "description": "Portfolio builds and product-oriented implementation milestones."
+    },
+    {
+      "id": "future",
+      "label": "Future",
+      "description": "Planned roadmap signals and next capability layers."
+    }
+  ],
+  "statusLabels": {
+    "completed": "Completed",
+    "active": "Active",
+    "planned": "Planned"
+  },
   "milestones": [
     {
-      "id": "portfolio-foundation",
-      "title": "Portfolio Foundation",
-      "description": "Created the React, TypeScript, and Vite engineering foundation.",
+      "id": "engineering-foundation",
+      "title": "Engineering Foundation",
+      "category": "development",
+      "summary": "Established the React, TypeScript, Vite, linting, and project structure required for a production-oriented portfolio system.",
+      "details": "This milestone created the base architecture for scalable frontend work: strict TypeScript, modular source folders, reusable loaders, and validation scripts that keep later phases grounded.",
+      "status": "completed",
+      "timeframe": "Foundation Phase",
+      "startDate": "2026-06",
+      "endDate": "2026-06",
+      "tags": ["React", "TypeScript", "Vite", "Architecture"]
+    },
+    {
+      "id": "dynamic-data-layer",
+      "title": "Dynamic Data Layer",
+      "category": "development",
+      "summary": "Moved portfolio content into structured data files with typed loader APIs.",
+      "details": "The data layer keeps UI components presentation-focused and prepares the portfolio for future CMS, Firebase, or API-backed content without forcing a component rewrite.",
+      "status": "completed",
+      "timeframe": "Data Systems",
+      "startDate": "2026-06",
+      "endDate": "2026-06",
+      "tags": ["Data", "Loaders", "Types", "CMS Ready"]
+    },
+    {
+      "id": "design-system-command-center",
+      "title": "AI Command Center Design System",
+      "category": "projects",
+      "summary": "Created the visual foundation for a premium AI operating-system style portfolio.",
+      "details": "The design system introduced reusable components, tokenized surfaces, electric cyan accents, glass panels, responsive layout primitives, and motion foundations.",
+      "status": "completed",
+      "timeframe": "Design System",
+      "startDate": "2026-06",
+      "endDate": "2026-06",
+      "tags": ["Design System", "Tokens", "UI", "Accessibility"]
+    },
+    {
+      "id": "ai-intro-experience",
+      "title": "AI Intro Experience",
+      "category": "ai",
+      "summary": "Built an initialization sequence that makes the portfolio feel like an AI assistant coming online.",
+      "details": "The boot sequence, hero reveal, and AI Orb establish the visitor journey as a guided intelligent system rather than a static landing page.",
+      "status": "completed",
+      "timeframe": "Phase 2",
+      "startDate": "2026-06",
+      "endDate": "2026-06",
+      "tags": ["AI UX", "Motion", "Hero", "Assistant"]
+    },
+    {
+      "id": "about-identity-system",
+      "title": "About Identity System",
+      "category": "projects",
+      "summary": "Replaced the About placeholder with a dynamic AI briefing about Gautam's focus, mission, and strengths.",
+      "details": "This phase turned the identity section into a data-driven command-center briefing that communicates who Gautam is, what he builds, and why he builds.",
+      "status": "completed",
+      "timeframe": "Phase 3",
+      "startDate": "2026-06",
+      "endDate": "2026-06",
+      "tags": ["Identity", "About", "Dynamic Content", "Frontend"]
+    },
+    {
+      "id": "ai-learning-loop",
+      "title": "AI Learning Loop",
+      "category": "ai",
+      "summary": "Actively deepening practical AI engineering through assistant workflows, prompt systems, and applied product use cases.",
+      "details": "The focus is on understanding how intelligent interfaces can help users think, build, and navigate complexity without adding unnecessary noise.",
+      "status": "active",
+      "timeframe": "Current Focus",
       "startDate": "2026-06",
       "endDate": null,
-      "type": "project"
+      "tags": ["AI", "Assistants", "Prompt Systems", "Product Thinking"]
+    },
+    {
+      "id": "full-stack-practice",
+      "title": "Full Stack Engineering Practice",
+      "category": "development",
+      "summary": "Continuing to strengthen frontend systems, backend structure, data flow, and maintainable application architecture.",
+      "details": "This milestone represents the ongoing discipline behind the portfolio: building systems that remain understandable as features become more ambitious.",
+      "status": "active",
+      "timeframe": "Current Focus",
+      "startDate": "2026-06",
+      "endDate": null,
+      "tags": ["Frontend", "Backend", "System Design", "Maintainability"]
+    },
+    {
+      "id": "education-foundation",
+      "title": "Engineering Education Foundation",
+      "category": "education",
+      "summary": "Building technical fundamentals through structured learning, software practice, and continuous experimentation.",
+      "details": "The education layer supports the broader engineering path: learning the fundamentals, applying them in projects, and refining judgment through iteration.",
+      "status": "active",
+      "timeframe": "Learning Track",
+      "startDate": "2026-06",
+      "endDate": null,
+      "tags": ["Learning", "Computer Science", "Engineering", "Practice"]
+    },
+    {
+      "id": "skills-graph-roadmap",
+      "title": "Neural Skills Graph",
+      "category": "future",
+      "summary": "Planned skills experience that will map Gautam's technical capabilities as connected engineering signals.",
+      "details": "The next capability layer will move beyond flat skills lists and show relationships between tools, systems, strengths, and project evidence.",
+      "status": "planned",
+      "timeframe": "Future Phase",
+      "startDate": "2026-07",
+      "endDate": null,
+      "tags": ["Skills", "Roadmap", "Data Visualization", "AI Portfolio"]
+    },
+    {
+      "id": "project-intelligence-roadmap",
+      "title": "Project Intelligence Layer",
+      "category": "future",
+      "summary": "Planned project system for presenting selected builds with richer context, decisions, architecture, and outcomes.",
+      "details": "This future phase will help visitors inspect how Gautam thinks through problems, not just what was built.",
+      "status": "planned",
+      "timeframe": "Future Phase",
+      "startDate": "2026-07",
+      "endDate": null,
+      "tags": ["Projects", "Case Studies", "Architecture", "Storytelling"]
     }
   ]
 }
