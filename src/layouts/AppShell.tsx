@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { PageLayout } from '@/components/layout';
 import {
   aboutLoader,
+  contactLoader,
   portfolioLoader,
   projectIntelligenceLoader,
   skillGraphLoader,
@@ -21,14 +22,15 @@ import {
 } from '@/design-system/tokens';
 import type { TokenStyle } from '@/design-system/styleTypes';
 import { AboutSection } from '@/features/about';
+import { ContactCommandCenter } from '@/features/contact';
 import { BootSequence, useIntroExperience } from '@/features/intro';
 import { ProjectsSection } from '@/features/projects';
 import { SkillsSection } from '@/features/skills';
 import { JourneyTimeline } from '@/features/timeline';
-import { ContactSection } from '@/sections/ContactSection';
 import { HeroSection } from '@/sections/HeroSection';
 import type {
   AboutContent,
+  ContactContent,
   PortfolioMetadata,
   ProjectIntelligence,
   SkillGraphData,
@@ -42,6 +44,7 @@ import './shell.css';
 
 export function AppShell() {
   const [about, setAbout] = useState<AboutContent | null>(null);
+  const [contact, setContact] = useState<ContactContent | null>(null);
   const [portfolio, setPortfolio] = useState<PortfolioMetadata | null>(null);
   const [projects, setProjects] = useState<readonly ProjectIntelligence[]>([]);
   const [skillGraph, setSkillGraph] = useState<SkillGraphData | null>(null);
@@ -54,21 +57,25 @@ export function AppShell() {
 
     void Promise.all([
       aboutLoader.getAll(),
+      contactLoader.getAll(),
       portfolioLoader.getAll(),
       projectIntelligenceLoader.getAllProjects(),
       skillGraphLoader.getAll(),
       socialLoader.getAll(),
       timelineLoader.getTimeline(),
-    ]).then(([aboutData, portfolioData, projectData, skillGraphData, socialData, timelineData]) => {
+    ]).then(
+      ([aboutData, contactData, portfolioData, projectData, skillGraphData, socialData, timelineData]) => {
         if (isActive) {
           setAbout(aboutData);
+          setContact(contactData);
           setPortfolio(portfolioData);
           setProjects(projectData);
           setSkillGraph(skillGraphData);
           setSocials(socialData);
           setTimeline(timelineData);
         }
-      });
+      },
+    );
 
     return () => {
       isActive = false;
@@ -144,7 +151,7 @@ export function AppShell() {
         <JourneyTimeline timeline={timeline} />
         <SkillsSection skillGraph={skillGraph} />
         <ProjectsSection projects={projects} />
-        <ContactSection email={portfolio?.email} />
+        <ContactCommandCenter contact={contact} />
       </main>
 
       <Footer portfolio={portfolio} socials={socials} />

@@ -1,5 +1,6 @@
 export { aboutLoader } from './loaders/aboutLoader';
 export { achievementLoader } from './loaders/achievementLoader';
+export { contactLoader } from './loaders/contactLoader';
 export { portfolioLoader } from './loaders/portfolioLoader';
 export { projectLoader } from './loaders/projectLoader';
 export {

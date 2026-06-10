@@ -1,0 +1,250 @@
+.contact-command {
+  position: relative;
+  scroll-margin-top: 4.5rem;
+  border-top: 1px solid var(--shell-border);
+  background:
+    radial-gradient(circle at 82% 16%, rgb(0 229 255 / 0.11), transparent 22rem),
+    radial-gradient(circle at 14% 74%, rgb(255 255 255 / 0.055), transparent 18rem);
+}
+
+.contact-command__layout {
+  display: grid;
+  gap: var(--shell-space-xl);
+}
+
+.contact-command__intelligence {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: var(--shell-space-lg);
+}
+
+.contact-card,
+.recruiter-card {
+  display: grid;
+  gap: var(--shell-space-lg);
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.contact-card__header,
+.recruiter-card__header {
+  display: grid;
+  gap: var(--shell-space-sm);
+}
+
+.contact-card__status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--shell-space-xs);
+  color: var(--shell-cyan);
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-bold);
+  letter-spacing: var(--shell-tracking-wide);
+  text-transform: uppercase;
+}
+
+.contact-card__status span {
+  width: 0.58rem;
+  aspect-ratio: 1;
+  border-radius: var(--shell-radius-full);
+  background: var(--shell-cyan);
+  box-shadow: 0 0 1rem rgb(0 229 255 / 0.72);
+  animation: contact-status-pulse 2.4s ease-in-out infinite;
+}
+
+.contact-card h3,
+.recruiter-card h3,
+.future-contact-layer__header h3 {
+  color: var(--shell-white);
+  font-size: var(--shell-font-2xl);
+  line-height: var(--shell-line-tight);
+}
+
+.contact-card p,
+.recruiter-card p,
+.availability-card p,
+.future-contact-module p {
+  color: var(--shell-muted);
+  line-height: var(--shell-line-relaxed);
+}
+
+.contact-card__details,
+.recruiter-card__metrics {
+  display: grid;
+  gap: var(--shell-space-md);
+}
+
+.contact-card__details div,
+.recruiter-card__metrics div {
+  display: grid;
+  gap: 0.25rem;
+  padding: var(--shell-space-sm);
+  border: 1px solid var(--shell-border);
+  border-radius: var(--shell-radius-md);
+  background: rgb(255 255 255 / 0.035);
+}
+
+.contact-card dt,
+.recruiter-card dt {
+  color: var(--shell-muted);
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-bold);
+  letter-spacing: var(--shell-tracking-wide);
+  text-transform: uppercase;
+}
+
+.contact-card dd,
+.recruiter-card dd {
+  color: var(--shell-white);
+  font-weight: var(--shell-weight-semibold);
+}
+
+.contact-card a,
+.contact-actions__link {
+  color: var(--shell-cyan);
+}
+
+.contact-card a:focus-visible,
+.contact-actions__link:focus-visible,
+.project-details__links a:focus-visible {
+  outline: 2px solid var(--shell-cyan);
+  outline-offset: 0.25rem;
+  border-radius: var(--shell-radius-sm);
+}
+
+.recruiter-card__header span,
+.future-contact-layer__header span,
+.availability-card span,
+.future-contact-module span {
+  color: var(--shell-cyan);
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-bold);
+  letter-spacing: var(--shell-tracking-wide);
+  text-transform: uppercase;
+}
+
+.recruiter-card__metrics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contact-actions {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--shell-space-md);
+}
+
+.contact-actions__link {
+  display: inline-flex;
+  min-height: 3.1rem;
+  align-items: center;
+  justify-content: center;
+  padding: var(--shell-space-sm) var(--shell-space-md);
+  border: 1px solid rgb(0 229 255 / 0.36);
+  border-radius: var(--shell-radius-md);
+  background: rgb(0 229 255 / 0.08);
+  color: var(--shell-white);
+  font-weight: var(--shell-weight-bold);
+  text-align: center;
+  text-decoration: none;
+  transition:
+    border-color var(--shell-transition),
+    background var(--shell-transition),
+    box-shadow var(--shell-transition),
+    transform var(--shell-transition);
+}
+
+.contact-actions__link:hover,
+.contact-actions__link:focus-visible {
+  border-color: var(--shell-cyan);
+  background: rgb(0 229 255 / 0.14);
+  box-shadow: var(--shell-glow-subtle);
+  transform: translateY(-0.12rem);
+}
+
+.availability-grid,
+.future-contact-layer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--shell-space-md);
+}
+
+.availability-card,
+.future-contact-module {
+  display: grid;
+  gap: var(--shell-space-sm);
+}
+
+.availability-card {
+  min-height: 12rem;
+  background: rgb(255 255 255 / 0.025);
+}
+
+.availability-card h3,
+.future-contact-module h4 {
+  color: var(--shell-white);
+  font-size: var(--shell-font-lg);
+  line-height: var(--shell-line-tight);
+}
+
+.future-contact-layer {
+  display: grid;
+  gap: var(--shell-space-md);
+  padding-top: var(--shell-space-md);
+  border-top: 1px solid var(--shell-border);
+}
+
+.future-contact-layer__header {
+  display: grid;
+  gap: var(--shell-space-xs);
+}
+
+.future-contact-layer__grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.future-contact-module {
+  border-style: dashed;
+}
+
+@keyframes contact-status-pulse {
+  0%,
+  100% {
+    opacity: 0.72;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.28);
+  }
+}
+
+@media (max-width: 72rem) {
+  .contact-command__intelligence,
+  .contact-actions,
+  .availability-grid,
+  .future-contact-layer__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .recruiter-card__metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-card__status span {
+    animation: none;
+  }
+
+  .contact-actions__link {
+    transition: none;
+  }
+
+  .contact-actions__link:hover,
+  .contact-actions__link:focus-visible {
+    transform: none;
+  }
+}
