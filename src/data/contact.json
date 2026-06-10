@@ -1,0 +1,99 @@
+{
+  "section": {
+    "eyebrow": "Contact Command Center",
+    "title": "CONTACT COMMAND CENTER",
+    "description": "Communication channels, professional availability, and recruiter access points."
+  },
+  "identity": {
+    "fullName": "Gautam Kumar",
+    "roles": ["AI Engineer", "Full Stack Developer"],
+    "tagline": "Building AI systems, backend services, and full-stack products with practical engineering discipline.",
+    "location": "Bengaluru, India",
+    "status": "Available for Opportunities"
+  },
+  "channels": [
+    {
+      "id": "email",
+      "type": "email",
+      "label": "Email",
+      "value": "gautam22017@gmail.com",
+      "href": "mailto:gautam22017@gmail.com",
+      "external": false
+    },
+    {
+      "id": "github",
+      "type": "github",
+      "label": "GitHub",
+      "value": "github.com/Gautam748823",
+      "href": "https://github.com/Gautam748823",
+      "external": true
+    },
+    {
+      "id": "linkedin",
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "value": "linkedin.com/in/gautam4875",
+      "href": "https://www.linkedin.com/in/gautam4875/",
+      "external": true
+    }
+  ],
+  "availability": [
+    {
+      "id": "internships",
+      "label": "Internships",
+      "description": "Open to internship opportunities where AI, software engineering, and product delivery intersect.",
+      "active": true
+    },
+    {
+      "id": "full-stack",
+      "label": "Full Stack Development",
+      "description": "Available for React, backend API, and data-driven application work.",
+      "active": true
+    },
+    {
+      "id": "ai-engineering",
+      "label": "AI Engineering",
+      "description": "Focused on practical AI systems, computer vision, and intelligent workflows.",
+      "active": true
+    },
+    {
+      "id": "open-source",
+      "label": "Open Source Collaboration",
+      "description": "Open to collaborative engineering work with clear scope and real-world usefulness.",
+      "active": true
+    }
+  ],
+  "resumeIntelligence": {
+    "cgpa": "7.36",
+    "degree": "B.Tech Computer Science & Engineering",
+    "graduationYear": "2027",
+    "projectCount": "5+",
+    "coreTechnologiesCount": "15+",
+    "focusAreas": ["AI Systems", "Full Stack Engineering", "Backend Systems", "Computer Vision"],
+    "resumeUrl": "/Gautam_Kumar_CV_final.pdf"
+  },
+  "recruiterCta": {
+    "headline": "Ready for AI engineering and full-stack opportunities.",
+    "supportingMessage": "Review Gautam's work, open his engineering profiles, or start a direct conversation from this command center."
+  },
+  "futureIntegrations": [
+    {
+      "id": "future-contact-form",
+      "title": "Future Contact Form",
+      "description": "Planned secure form layer for structured recruiter messages.",
+      "status": "planned"
+    },
+    {
+      "id": "future-meeting-scheduler",
+      "title": "Future Meeting Scheduler",
+      "description": "Planned scheduling module for interview and collaboration calls.",
+      "status": "planned"
+    },
+    {
+      "id": "future-recruiter-booking",
+      "title": "Future Recruiter Booking Layer",
+      "description": "Planned recruiter booking workflow with availability intelligence.",
+      "status": "planned"
+    }
+  ]
+}
