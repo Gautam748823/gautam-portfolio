@@ -2,6 +2,7 @@ export * from './Achievement';
 export * from './About';
 export * from './Portfolio';
 export * from './Project';
+export * from './ProjectIntelligence';
 export * from './Skill';
 export * from './SkillGraph';
 export * from './Social';
