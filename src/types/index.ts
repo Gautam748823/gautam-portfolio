@@ -1,6 +1,7 @@
 export * from './Achievement';
 export * from './About';
 export * from './Contact';
+export * from './GitHub';
 export * from './Portfolio';
 export * from './Project';
 export * from './ProjectIntelligence';
