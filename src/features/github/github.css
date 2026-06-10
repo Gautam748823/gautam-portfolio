@@ -1,0 +1,267 @@
+.github-dashboard {
+  position: relative;
+  scroll-margin-top: 4.5rem;
+  border-top: 1px solid var(--shell-border);
+  background:
+    radial-gradient(circle at 20% 22%, rgb(0 229 255 / 0.1), transparent 24rem),
+    radial-gradient(circle at 86% 70%, rgb(255 255 255 / 0.05), transparent 18rem),
+    linear-gradient(180deg, transparent, rgb(0 229 255 / 0.028), transparent);
+}
+
+.github-dashboard__layout,
+.github-dashboard__panel,
+.github-profile-card,
+.github-summary-card,
+.github-metric-card,
+.github-repository-card,
+.github-insight-card,
+.github-activity-card {
+  display: grid;
+  gap: var(--shell-space-md);
+}
+
+.github-dashboard__layout {
+  gap: var(--shell-space-xl);
+}
+
+.github-dashboard__top {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: var(--shell-space-lg);
+}
+
+.github-profile-card,
+.github-summary-card,
+.github-metric-card,
+.github-language-card,
+.github-repository-card {
+  transition:
+    border-color var(--shell-transition),
+    box-shadow var(--shell-transition),
+    transform var(--shell-transition);
+}
+
+.github-profile-card:hover,
+.github-summary-card:hover,
+.github-metric-card:hover,
+.github-language-card:hover,
+.github-repository-card:hover,
+.github-insight-card:hover,
+.github-activity-card:hover {
+  border-color: var(--shell-cyan);
+  box-shadow: var(--shell-glow-subtle);
+  transform: translateY(-0.12rem);
+}
+
+.github-profile-card__header,
+.github-dashboard__panel-header,
+.github-summary-card {
+  display: grid;
+  gap: var(--shell-space-sm);
+}
+
+.github-profile-card__header span,
+.github-summary-card span,
+.github-dashboard__panel-header span,
+.github-repository-card__header span,
+.github-insight-card span,
+.github-activity-card span {
+  color: var(--shell-cyan);
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-bold);
+  letter-spacing: var(--shell-tracking-wide);
+  text-transform: uppercase;
+}
+
+.github-profile-card h3,
+.github-summary-card h3,
+.github-dashboard__panel-header h3 {
+  color: var(--shell-white);
+  font-size: var(--shell-font-2xl);
+  line-height: var(--shell-line-tight);
+}
+
+.github-summary-card p,
+.github-metric-card p,
+.github-language-card p,
+.github-repository-card p,
+.github-insight-card p,
+.github-activity-card p {
+  color: var(--shell-muted);
+  line-height: var(--shell-line-relaxed);
+}
+
+.github-profile-card a,
+.github-repository-card a {
+  color: var(--shell-cyan);
+  font-weight: var(--shell-weight-bold);
+  overflow-wrap: anywhere;
+}
+
+.github-profile-card a:focus-visible,
+.github-repository-card a:focus-visible {
+  outline: 2px solid var(--shell-cyan);
+  outline-offset: 0.25rem;
+  border-radius: var(--shell-radius-sm);
+}
+
+.github-profile-card__stats,
+.github-metrics {
+  display: grid;
+  gap: var(--shell-space-md);
+}
+
+.github-profile-card__stats {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.github-profile-card__stats div {
+  display: grid;
+  gap: 0.2rem;
+  padding: var(--shell-space-sm);
+  border: 1px solid var(--shell-border);
+  border-radius: var(--shell-radius-md);
+  background: rgb(255 255 255 / 0.035);
+}
+
+.github-profile-card__stats dt {
+  color: var(--shell-muted);
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-bold);
+  text-transform: uppercase;
+}
+
+.github-profile-card__stats dd,
+.github-metric-card strong,
+.github-language-card strong {
+  color: var(--shell-white);
+  font-size: var(--shell-font-2xl);
+  font-weight: var(--shell-weight-bold);
+  line-height: var(--shell-line-tight);
+}
+
+.github-metrics {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.github-metric-card span {
+  color: var(--shell-cyan);
+  font-size: var(--shell-font-sm);
+  font-weight: var(--shell-weight-bold);
+}
+
+.github-language-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--shell-space-md);
+}
+
+.github-language-card {
+  display: grid;
+  gap: var(--shell-space-sm);
+}
+
+.github-language-card__meta,
+.github-repository-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--shell-space-sm);
+}
+
+.github-language-card h4,
+.github-repository-card h4,
+.github-insight-card h4,
+.github-activity-card h4 {
+  color: var(--shell-white);
+  font-size: var(--shell-font-lg);
+  line-height: var(--shell-line-tight);
+}
+
+.github-language-card__track {
+  height: 0.65rem;
+  overflow: hidden;
+  border: 1px solid var(--shell-border);
+  border-radius: var(--shell-radius-full);
+  background: rgb(255 255 255 / 0.06);
+}
+
+.github-language-card__track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--shell-cyan), var(--shell-white));
+  box-shadow: var(--shell-glow-subtle);
+}
+
+.github-repository-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--shell-space-md);
+}
+
+.github-repository-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--shell-space-xs);
+}
+
+.github-repository-card__tags span {
+  padding: var(--shell-space-xs) var(--shell-space-sm);
+  border: 1px solid var(--shell-border);
+  border-radius: var(--shell-radius-full);
+  background: rgb(255 255 255 / 0.04);
+  color: var(--shell-white);
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-semibold);
+}
+
+.github-dashboard__split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--shell-space-lg);
+}
+
+.github-insight-grid,
+.github-activity-list {
+  display: grid;
+  gap: var(--shell-space-md);
+}
+
+@media (max-width: 72rem) {
+  .github-dashboard__top,
+  .github-metrics,
+  .github-language-list,
+  .github-repository-grid,
+  .github-dashboard__split {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .github-profile-card__stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .github-profile-card,
+  .github-summary-card,
+  .github-metric-card,
+  .github-language-card,
+  .github-repository-card,
+  .github-insight-card,
+  .github-activity-card {
+    transition: none;
+  }
+
+  .github-profile-card:hover,
+  .github-summary-card:hover,
+  .github-metric-card:hover,
+  .github-language-card:hover,
+  .github-repository-card:hover,
+  .github-insight-card:hover,
+  .github-activity-card:hover {
+    transform: none;
+  }
+}

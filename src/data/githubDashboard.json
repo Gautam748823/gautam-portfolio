@@ -1,0 +1,203 @@
+{
+  "section": {
+    "eyebrow": "GitHub Intelligence",
+    "title": "GitHub Engineering Dashboard",
+    "description": "Monitor repository activity, technology distribution, engineering focus, and development signals."
+  },
+  "labels": {
+    "profileStats": {
+      "publicRepositories": "Public Repositories",
+      "followers": "Followers",
+      "following": "Following"
+    },
+    "engineeringSummary": "Engineering Summary",
+    "metrics": "Engineering metrics",
+    "languagePanelEyebrow": "Language Intelligence",
+    "languagePanelTitle": "Technology distribution signals",
+    "repositoriesPanelEyebrow": "Pinned Repositories",
+    "repositoriesPanelTitle": "Repository command grid",
+    "repositoryLink": "GitHub Link",
+    "insightsPanelEyebrow": "Engineering Insights",
+    "insightsPanelTitle": "Focus and direction",
+    "activityPanelEyebrow": "Activity Signals",
+    "activityPanelTitle": "Repository movement"
+  },
+  "profile": {
+    "username": "Gautam748823",
+    "profileUrl": "https://github.com/Gautam748823",
+    "publicRepositories": 18,
+    "followers": 2,
+    "following": 4,
+    "accountStatus": "Active engineering profile"
+  },
+  "metrics": [
+    {
+      "id": "repositories",
+      "label": "Repositories",
+      "value": "18",
+      "description": "Public repositories and portfolio-ready engineering work."
+    },
+    {
+      "id": "stars",
+      "label": "Stars",
+      "value": "0+",
+      "description": "Prepared for future live GitHub analytics."
+    },
+    {
+      "id": "languages",
+      "label": "Languages",
+      "value": "6+",
+      "description": "Frontend, backend, AI, and scripting coverage."
+    },
+    {
+      "id": "active-projects",
+      "label": "Active Projects",
+      "value": "5+",
+      "description": "AI and full-stack systems under active development."
+    },
+    {
+      "id": "contribution-signals",
+      "label": "Contribution Signals",
+      "value": "Rising",
+      "description": "Portfolio, AI systems, and backend practice are trending upward."
+    }
+  ],
+  "languages": [
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "percentage": 28,
+      "signal": "Primary portfolio and frontend systems language."
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "percentage": 22,
+      "signal": "Application behavior, tooling, and web development foundation."
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "percentage": 20,
+      "signal": "AI, computer vision, automation, and backend experimentation."
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "percentage": 14,
+      "signal": "Interface architecture and command center experiences."
+    },
+    {
+      "id": "node",
+      "name": "Node",
+      "percentage": 10,
+      "signal": "Backend services, APIs, and full-stack application logic."
+    },
+    {
+      "id": "other",
+      "name": "Other",
+      "percentage": 6,
+      "signal": "Supporting tools, configuration, and project infrastructure."
+    }
+  ],
+  "repositories": [
+    {
+      "id": "ai-command-center-portfolio",
+      "name": "AI Command Center Portfolio",
+      "category": "Portfolio System",
+      "description": "A phased, data-driven portfolio built as an AI operating-system style recruiter experience.",
+      "technologies": ["React", "TypeScript", "Vite", "CSS", "Data Loaders"],
+      "githubUrl": "https://github.com/Gautam748823",
+      "status": "Active"
+    },
+    {
+      "id": "ai-meeting-lecture-note-taker",
+      "name": "AI Meeting & Lecture Note Taker",
+      "category": "AI System",
+      "description": "Speech-to-notes workflow for transcription, summarization, and structured review.",
+      "technologies": ["React", "FastAPI", "Whisper", "Supabase", "LLMs"],
+      "githubUrl": "https://github.com/Gautam748823",
+      "status": "Active"
+    },
+    {
+      "id": "helmet-violation-detection-system",
+      "name": "Helmet Violation Detection System",
+      "category": "Computer Vision",
+      "description": "Object detection pipeline for rider and helmet compliance monitoring.",
+      "technologies": ["YOLOv8", "OpenCV", "Python", "FastAPI", "React"],
+      "githubUrl": "https://github.com/Gautam748823",
+      "status": "Active"
+    },
+    {
+      "id": "crowdscope-crowd-monitoring-system",
+      "name": "CrowdScope Crowd Monitoring System",
+      "category": "Backend Intelligence",
+      "description": "Crowd-density monitoring concept with API, metrics, and operator dashboard layers.",
+      "technologies": ["Node", "FastAPI", "OpenCV", "Firestore", "Analytics"],
+      "githubUrl": "https://github.com/Gautam748823",
+      "status": "Planned"
+    }
+  ],
+  "insights": [
+    {
+      "id": "primary-focus",
+      "label": "Primary Focus",
+      "value": "AI Systems",
+      "description": "Repository work is oriented around practical AI workflows and intelligent application layers."
+    },
+    {
+      "id": "full-stack-engineering",
+      "label": "Full Stack Engineering",
+      "value": "React + APIs",
+      "description": "Frontend command surfaces connect with backend service and data design."
+    },
+    {
+      "id": "backend-systems",
+      "label": "Backend Systems",
+      "value": "API Design",
+      "description": "Project direction emphasizes structured service layers and scalable workflows."
+    },
+    {
+      "id": "learning-direction",
+      "label": "Current Learning Direction",
+      "value": "Computer Vision",
+      "description": "AI projects show continued investment in OpenCV, YOLO, TensorFlow, and applied model workflows."
+    },
+    {
+      "id": "open-source-activity",
+      "label": "Open Source Activity",
+      "value": "Emerging",
+      "description": "Profile is prepared for broader collaboration and future contribution analytics."
+    }
+  ],
+  "activity": [
+    {
+      "id": "recent-activity",
+      "label": "Recent Activity Summary",
+      "value": "Portfolio systems active",
+      "description": "Recent engineering activity is concentrated on portfolio architecture, data systems, and recruiter-facing intelligence layers."
+    },
+    {
+      "id": "contribution-trend",
+      "label": "Contribution Trend",
+      "value": "Upward",
+      "description": "Project cadence is moving from static sections toward richer full-stack and AI command center modules."
+    },
+    {
+      "id": "repository-growth",
+      "label": "Repository Growth Signal",
+      "value": "Expanding",
+      "description": "Repository structure is ready for more project-specific analytics once GitHub API integration is approved."
+    },
+    {
+      "id": "future-analytics",
+      "label": "Future GitHub Analytics",
+      "value": "Prepared",
+      "description": "No API calls are made in this phase; this dashboard is shaped for a later live analytics layer."
+    }
+  ],
+  "engineeringSummary": {
+    "headline": "Engineering intelligence across AI, full stack, backend, and computer vision work.",
+    "description": "This dashboard summarizes Gautam's GitHub direction as a signal layer: what he is building, which technologies appear repeatedly, and where the engineering profile is gaining momentum."
+  }
+}
