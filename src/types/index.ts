@@ -11,4 +11,5 @@ export * from './RecruiterMode';
 export * from './Skill';
 export * from './SkillGraph';
 export * from './Social';
+export * from './Terminal';
 export * from './Timeline';

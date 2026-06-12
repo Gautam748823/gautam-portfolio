@@ -1,0 +1,311 @@
+.terminal-mode {
+  position: fixed;
+  bottom: clamp(1rem, 3vw, 1.5rem);
+  left: clamp(1rem, 3vw, 1.5rem);
+  z-index: 40;
+  pointer-events: none;
+}
+
+.terminal-launcher,
+.terminal-window {
+  pointer-events: auto;
+}
+
+.terminal-launcher {
+  display: inline-flex;
+  min-height: 3.25rem;
+  align-items: center;
+  gap: var(--shell-space-sm);
+  padding: var(--shell-space-sm) var(--shell-space-md);
+  border: 1px solid rgb(0 229 255 / 0.48);
+  border-radius: var(--shell-radius-full);
+  background:
+    linear-gradient(135deg, rgb(255 255 255 / 0.06), rgb(0 229 255 / 0.14)),
+    rgb(4 9 17 / 0.9);
+  box-shadow: var(--shell-glow-subtle), var(--shell-shadow);
+  color: var(--shell-white);
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--shell-font-sm);
+  font-weight: var(--shell-weight-bold);
+  transition:
+    border-color var(--shell-transition),
+    box-shadow var(--shell-transition),
+    transform var(--shell-transition);
+}
+
+.terminal-launcher span:first-child {
+  color: var(--shell-cyan);
+  font-weight: var(--shell-weight-bold);
+}
+
+.terminal-launcher:hover,
+.terminal-launcher:focus-visible {
+  border-color: var(--shell-cyan);
+  box-shadow: var(--shell-glow);
+  transform: translateY(-0.12rem);
+}
+
+.terminal-launcher:focus-visible,
+.terminal-window button:focus-visible,
+.terminal-input input:focus-visible {
+  outline: 2px solid var(--shell-cyan);
+  outline-offset: 0.2rem;
+}
+
+.terminal-window {
+  position: absolute;
+  bottom: calc(100% + var(--shell-space-md));
+  left: 0;
+  display: grid;
+  width: min(34rem, calc(100vw - 2rem));
+  max-height: min(39rem, calc(100vh - 7rem));
+  overflow: hidden;
+  border: 1px solid rgb(0 229 255 / 0.34);
+  border-radius: var(--shell-radius-lg);
+  background:
+    linear-gradient(180deg, rgb(0 229 255 / 0.1), transparent 16rem),
+    rgb(3 8 15 / 0.97);
+  box-shadow: var(--shell-glow), var(--shell-shadow);
+  backdrop-filter: blur(1rem);
+}
+
+.terminal-window::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(rgb(255 255 255 / 0.032) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.024) 1px, transparent 1px);
+  background-size: 1.5rem 1.5rem;
+  content: '';
+  mask-image: linear-gradient(180deg, black, transparent 76%);
+}
+
+.terminal-window__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--shell-space-md);
+  padding: var(--shell-space-lg);
+  border-bottom: 1px solid var(--shell-border);
+}
+
+.terminal-window__header div {
+  display: grid;
+  gap: var(--shell-space-xs);
+}
+
+.terminal-window__header span,
+.terminal-history__command {
+  color: var(--shell-cyan);
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-bold);
+  letter-spacing: var(--shell-tracking-wide);
+  text-transform: uppercase;
+}
+
+.terminal-window__header h2,
+.terminal-welcome strong {
+  color: var(--shell-white);
+  font-size: var(--shell-font-xl);
+  line-height: var(--shell-line-tight);
+}
+
+.terminal-window__header p,
+.terminal-welcome p,
+.terminal-welcome span {
+  color: var(--shell-muted);
+  line-height: var(--shell-line-relaxed);
+}
+
+.terminal-window__header button {
+  flex: 0 0 auto;
+  border: 1px solid var(--shell-border);
+  border-radius: var(--shell-radius-md);
+  background: rgb(255 255 255 / 0.04);
+  color: var(--shell-white);
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-bold);
+  padding: var(--shell-space-xs) var(--shell-space-sm);
+}
+
+.terminal-window__body {
+  min-height: 15rem;
+  max-height: 23rem;
+  overflow-y: auto;
+  padding: var(--shell-space-md);
+  scrollbar-color: var(--shell-cyan) rgb(255 255 255 / 0.08);
+}
+
+.terminal-welcome,
+.terminal-history,
+.terminal-history__entry {
+  display: grid;
+  gap: var(--shell-space-md);
+}
+
+.terminal-welcome {
+  padding: var(--shell-space-lg);
+  border: 1px solid var(--shell-border);
+  border-radius: var(--shell-radius-md);
+  background: rgb(255 255 255 / 0.04);
+}
+
+.terminal-history__entry {
+  padding: var(--shell-space-md);
+  border: 1px solid var(--shell-border);
+  border-radius: var(--shell-radius-md);
+  background: rgb(255 255 255 / 0.04);
+}
+
+.terminal-history__command {
+  margin: 0;
+  text-transform: none;
+}
+
+.terminal-history__response {
+  margin: 0;
+  overflow-x: auto;
+  color: var(--shell-white);
+  font: inherit;
+  font-size: var(--shell-font-sm);
+  line-height: var(--shell-line-relaxed);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.terminal-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--shell-space-xs);
+}
+
+.terminal-suggestions button {
+  border: 1px solid rgb(0 229 255 / 0.28);
+  border-radius: var(--shell-radius-full);
+  background: rgb(0 229 255 / 0.08);
+  color: var(--shell-white);
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-semibold);
+  padding: 0.42rem 0.72rem;
+  transition:
+    border-color var(--shell-transition),
+    background var(--shell-transition);
+}
+
+.terminal-suggestions button:hover,
+.terminal-suggestions button:focus-visible {
+  border-color: var(--shell-cyan);
+  background: rgb(0 229 255 / 0.15);
+}
+
+.terminal-input {
+  padding: 0 var(--shell-space-md) var(--shell-space-md);
+}
+
+.terminal-input label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.terminal-input__control {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--shell-space-xs);
+  border: 1px solid var(--shell-border);
+  border-radius: var(--shell-radius-md);
+  background: rgb(255 255 255 / 0.045);
+  padding: var(--shell-space-xs);
+}
+
+.terminal-input__control > span {
+  color: var(--shell-cyan);
+  font-weight: var(--shell-weight-bold);
+  padding-left: var(--shell-space-xs);
+}
+
+.terminal-input input,
+.terminal-input button {
+  min-height: 2.5rem;
+  border: 0;
+  border-radius: var(--shell-radius-sm);
+  font: inherit;
+}
+
+.terminal-input input {
+  min-width: 0;
+  background: transparent;
+  color: var(--shell-white);
+  padding: 0 var(--shell-space-sm);
+}
+
+.terminal-input input::placeholder {
+  color: rgb(255 255 255 / 0.44);
+}
+
+.terminal-input button {
+  background: var(--shell-cyan);
+  color: var(--shell-deep-black);
+  cursor: pointer;
+  font-weight: var(--shell-weight-bold);
+  padding: 0 var(--shell-space-md);
+}
+
+.terminal-input button:disabled,
+.terminal-input input:disabled {
+  cursor: not-allowed;
+  opacity: 0.58;
+}
+
+@media (max-width: 38rem) {
+  .terminal-mode {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    left: 0.75rem;
+  }
+
+  .terminal-window {
+    width: 100%;
+    max-height: calc(100vh - 6.5rem);
+  }
+
+  .terminal-window__header,
+  .terminal-window__body {
+    padding: var(--shell-space-sm);
+  }
+
+  .terminal-input {
+    padding: 0 var(--shell-space-sm) var(--shell-space-sm);
+  }
+
+  .terminal-input__control {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .terminal-input button {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .terminal-launcher,
+  .terminal-suggestions button {
+    transition: none;
+  }
+
+  .terminal-launcher:hover,
+  .terminal-launcher:focus-visible {
+    transform: none;
+  }
+}
