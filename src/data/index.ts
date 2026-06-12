@@ -11,6 +11,7 @@ export {
   getProjectBySlug,
   projectIntelligenceLoader,
 } from './loaders/projectIntelligenceLoader';
+export { recruiterModeLoader } from './loaders/recruiterModeLoader';
 export { skillGraphLoader } from './loaders/skillGraphLoader';
 export { skillLoader } from './loaders/skillLoader';
 export { socialLoader } from './loaders/socialLoader';

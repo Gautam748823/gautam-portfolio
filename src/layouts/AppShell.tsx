@@ -7,6 +7,7 @@ import {
   githubLoader,
   portfolioLoader,
   projectIntelligenceLoader,
+  recruiterModeLoader,
   skillGraphLoader,
   socialLoader,
   timelineLoader,
@@ -29,6 +30,7 @@ import { ContactCommandCenter } from '@/features/contact';
 import { GitHubIntelligenceDashboard } from '@/features/github';
 import { BootSequence, useIntroExperience } from '@/features/intro';
 import { ProjectsSection } from '@/features/projects';
+import { RecruiterModeSection } from '@/features/recruiter';
 import { SkillsSection } from '@/features/skills';
 import { JourneyTimeline } from '@/features/timeline';
 import { HeroSection } from '@/sections/HeroSection';
@@ -39,6 +41,7 @@ import type {
   GitHubDashboardContent,
   PortfolioMetadata,
   ProjectIntelligence,
+  RecruiterModeContent,
   SkillGraphData,
   SocialLink,
   TimelineData,
@@ -56,6 +59,7 @@ export function AppShell() {
   const [githubDashboard, setGithubDashboard] = useState<GitHubDashboardContent | null>(null);
   const [portfolio, setPortfolio] = useState<PortfolioMetadata | null>(null);
   const [projects, setProjects] = useState<readonly ProjectIntelligence[]>([]);
+  const [recruiterMode, setRecruiterMode] = useState<RecruiterModeContent | null>(null);
   const [skillGraph, setSkillGraph] = useState<SkillGraphData | null>(null);
   const [socials, setSocials] = useState<readonly SocialLink[]>([]);
   const [timeline, setTimeline] = useState<TimelineData | null>(null);
@@ -71,6 +75,7 @@ export function AppShell() {
       githubLoader.getDashboard(),
       portfolioLoader.getAll(),
       projectIntelligenceLoader.getAllProjects(),
+      recruiterModeLoader.getRecruiterMode(),
       skillGraphLoader.getAll(),
       socialLoader.getAll(),
       timelineLoader.getTimeline(),
@@ -82,6 +87,7 @@ export function AppShell() {
         githubDashboardData,
         portfolioData,
         projectData,
+        recruiterModeData,
         skillGraphData,
         socialData,
         timelineData,
@@ -93,6 +99,7 @@ export function AppShell() {
           setGithubDashboard(githubDashboardData);
           setPortfolio(portfolioData);
           setProjects(projectData);
+          setRecruiterMode(recruiterModeData);
           setSkillGraph(skillGraphData);
           setSocials(socialData);
           setTimeline(timelineData);
@@ -175,6 +182,7 @@ export function AppShell() {
         <SkillsSection skillGraph={skillGraph} />
         <ProjectsSection projects={projects} />
         <GitHubIntelligenceDashboard dashboard={githubDashboard} />
+        <RecruiterModeSection recruiterMode={recruiterMode} />
         <AchievementIntelligenceDashboard dashboard={achievementDashboard} />
         <ContactCommandCenter contact={contact} />
       </main>

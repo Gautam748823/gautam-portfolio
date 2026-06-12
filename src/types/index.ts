@@ -6,6 +6,7 @@ export * from './GitHub';
 export * from './Portfolio';
 export * from './Project';
 export * from './ProjectIntelligence';
+export * from './RecruiterMode';
 export * from './Skill';
 export * from './SkillGraph';
 export * from './Social';
