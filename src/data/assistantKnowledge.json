@@ -1,0 +1,345 @@
+{
+  "assistant": {
+    "name": "Gautam AI Core",
+    "title": "Digital Assistant",
+    "subtitle": "Portfolio knowledge core",
+    "greetingResponseId": "assistant_greeting",
+    "fallbackResponseId": "help_response"
+  },
+  "intents": [
+    {
+      "id": "who_is_gautam",
+      "label": "Who is Gautam",
+      "keywords": ["who is gautam", "who are you", "about gautam", "about", "identity", "profile"],
+      "responseId": "who_is_gautam_response"
+    },
+    {
+      "id": "show_projects",
+      "label": "Projects",
+      "keywords": ["projects", "show projects", "portfolio work", "case studies", "work"],
+      "responseId": "show_projects_response"
+    },
+    {
+      "id": "show_ai_projects",
+      "label": "AI Projects",
+      "keywords": ["ai projects", "artificial intelligence projects", "computer vision", "machine learning", "llm", "vision projects"],
+      "responseId": "show_ai_projects_response"
+    },
+    {
+      "id": "show_skills",
+      "label": "Skills",
+      "keywords": ["skills", "capabilities", "strengths", "what can gautam do", "skill graph"],
+      "responseId": "show_skills_response"
+    },
+    {
+      "id": "show_journey",
+      "label": "Journey",
+      "keywords": ["journey", "timeline", "background", "path", "learning path", "experience"],
+      "responseId": "show_journey_response"
+    },
+    {
+      "id": "show_achievements",
+      "label": "Achievements",
+      "keywords": ["achievements", "proof", "milestones", "accomplishments", "achievement dashboard"],
+      "responseId": "show_achievements_response"
+    },
+    {
+      "id": "show_github",
+      "label": "GitHub",
+      "keywords": ["github", "repositories", "repo", "code", "source"],
+      "responseId": "show_github_response"
+    },
+    {
+      "id": "show_contact",
+      "label": "Contact",
+      "keywords": ["contact", "email", "linkedin", "reach", "hire", "message"],
+      "responseId": "show_contact_response"
+    },
+    {
+      "id": "show_resume",
+      "label": "Resume",
+      "keywords": ["resume", "cv", "download resume", "download cv"],
+      "responseId": "show_resume_response"
+    },
+    {
+      "id": "show_recruiter_profile",
+      "label": "Recruiter Profile",
+      "keywords": ["recruiter", "recruiter profile", "hiring", "candidate", "recruiter mode"],
+      "responseId": "show_recruiter_profile_response"
+    },
+    {
+      "id": "current_focus",
+      "label": "Current Focus",
+      "keywords": ["current focus", "currently learning", "learning", "focus", "now", "roadmap"],
+      "responseId": "current_focus_response"
+    },
+    {
+      "id": "technologies",
+      "label": "Technologies",
+      "keywords": ["technologies", "tech stack", "tools", "frameworks", "languages"],
+      "responseId": "technologies_response"
+    },
+    {
+      "id": "help",
+      "label": "Help",
+      "keywords": ["help", "commands", "what can i ask", "options"],
+      "responseId": "help_response"
+    }
+  ],
+  "responses": [
+    {
+      "id": "assistant_greeting",
+      "title": "AI Core online",
+      "type": "actions",
+      "summary": "I can answer portfolio questions from Gautam's local knowledge base. Ask about his identity, projects, skills, GitHub, recruiter profile, resume, or contact details.",
+      "bullets": [],
+      "links": [],
+      "suggestions": [
+        { "id": "greeting-about", "label": "About", "intentId": "who_is_gautam" },
+        { "id": "greeting-projects", "label": "Projects", "intentId": "show_projects" },
+        { "id": "greeting-recruiter", "label": "Recruiter Mode", "intentId": "show_recruiter_profile" }
+      ]
+    },
+    {
+      "id": "who_is_gautam_response",
+      "title": "Gautam Kumar",
+      "type": "text",
+      "summary": "Gautam Kumar is an AI engineer and full-stack developer in Bengaluru, India. He builds practical intelligent systems, typed React interfaces, backend-oriented workflows, and recruiter-facing product experiences.",
+      "bullets": [
+        "Primary roles: AI Engineer, Full Stack Developer, System Builder, Problem Solver.",
+        "Mission: make complex work understandable, capable, and calm through useful technology.",
+        "Education signal: B.Tech Computer Science & Engineering, expected graduation 2027."
+      ],
+      "links": [{ "id": "about-link", "label": "Open About", "href": "#about", "external": false }],
+      "suggestions": [
+        { "id": "about-skills", "label": "Show skills", "intentId": "show_skills" },
+        { "id": "about-journey", "label": "Show journey", "intentId": "show_journey" }
+      ]
+    },
+    {
+      "id": "show_projects_response",
+      "title": "Project intelligence",
+      "type": "list",
+      "summary": "Gautam's project layer focuses on applied AI, computer vision, backend intelligence, and full-stack product systems.",
+      "bullets": [
+        "AI Meeting & Lecture Note Taker: transforms spoken sessions into structured notes and summaries.",
+        "Helmet Violation Detection System: computer vision pipeline for rider safety compliance.",
+        "Wildlife Conservation & Species Identification: confidence-ranked image intelligence for conservation workflows.",
+        "AI Plant Disease Detection: image-based crop health screening with practical guidance.",
+        "CrowdScope Crowd Monitoring System: density and safety awareness concept for operational dashboards."
+      ],
+      "links": [{ "id": "projects-link", "label": "Open Projects", "href": "#projects", "external": false }],
+      "suggestions": [
+        { "id": "projects-ai", "label": "Show AI projects", "intentId": "show_ai_projects" },
+        { "id": "projects-github", "label": "Show GitHub", "intentId": "show_github" }
+      ]
+    },
+    {
+      "id": "show_ai_projects_response",
+      "title": "AI project signal",
+      "type": "list",
+      "summary": "The AI work is centered on useful workflows rather than model demos: summarization, transcription, object detection, classification, and confidence-aware interfaces.",
+      "bullets": [
+        "AI Meeting & Lecture Note Taker uses transcription and LLM-style summarization workflows.",
+        "Helmet Violation Detection applies YOLOv8 and OpenCV for object detection.",
+        "Wildlife Species Identification and Plant Disease Detection use computer vision classification patterns.",
+        "CrowdScope connects AI-assisted counting signals with backend and dashboard architecture."
+      ],
+      "links": [{ "id": "ai-projects-link", "label": "Open Projects", "href": "#projects", "external": false }],
+      "suggestions": [
+        { "id": "ai-skills", "label": "AI skills", "intentId": "show_skills" },
+        { "id": "ai-focus", "label": "Current focus", "intentId": "current_focus" }
+      ]
+    },
+    {
+      "id": "show_skills_response",
+      "title": "Skills graph",
+      "type": "list",
+      "summary": "Gautam's strongest capability clusters are frontend engineering, backend engineering, AI engineering, databases, cloud, DevOps, system design, and developer tools.",
+      "bullets": [
+        "Frontend: React, TypeScript, Vite, responsive UI, accessibility.",
+        "Backend: Node.js, Express, REST APIs, authentication, validation, service design.",
+        "AI: LLM workflows, prompt design, RAG, embeddings, agents, evaluation.",
+        "Data and systems: PostgreSQL, MongoDB, schema design, architecture, scalability, reliability."
+      ],
+      "links": [{ "id": "skills-link", "label": "Open Skills", "href": "#skills", "external": false }],
+      "suggestions": [
+        { "id": "skills-tech", "label": "Technologies", "intentId": "technologies" },
+        { "id": "skills-achievements", "label": "Achievements", "intentId": "show_achievements" }
+      ]
+    },
+    {
+      "id": "show_journey_response",
+      "title": "Journey timeline",
+      "type": "list",
+      "summary": "The journey shows Gautam moving through engineering foundations, dynamic data architecture, design-system work, AI UX, identity systems, and active AI/full-stack learning.",
+      "bullets": [
+        "Completed foundations include React, TypeScript, Vite, loaders, typed data, and command-center design systems.",
+        "Active focus areas include AI learning loops and full-stack engineering practice.",
+        "The roadmap points toward deeper project intelligence, skills mapping, and production-ready systems."
+      ],
+      "links": [{ "id": "journey-link", "label": "Open Journey", "href": "#journey", "external": false }],
+      "suggestions": [
+        { "id": "journey-focus", "label": "Current focus", "intentId": "current_focus" },
+        { "id": "journey-achievements", "label": "Achievements", "intentId": "show_achievements" }
+      ]
+    },
+    {
+      "id": "show_achievements_response",
+      "title": "Achievement intelligence",
+      "type": "list",
+      "summary": "The achievement layer highlights applied projects, portfolio execution, technology breadth, academic progress, and current learning momentum.",
+      "bullets": [
+        "Project proof spans AI note-taking, helmet detection, wildlife classification, and plant disease detection.",
+        "Learning signals include AI engineering, full-stack development, system design, computer vision, and backend engineering.",
+        "Future milestones include open-source contributions, hackathons, research publication, SaaS launch, and advanced AI systems."
+      ],
+      "links": [{ "id": "achievements-link", "label": "Open Achievements", "href": "#achievements", "external": false }],
+      "suggestions": [
+        { "id": "achievements-recruiter", "label": "Recruiter profile", "intentId": "show_recruiter_profile" },
+        { "id": "achievements-projects", "label": "Projects", "intentId": "show_projects" }
+      ]
+    },
+    {
+      "id": "show_github_response",
+      "title": "GitHub profile",
+      "type": "links",
+      "summary": "Gautam's GitHub signal centers on AI systems, full-stack engineering, backend practice, and computer vision work. The current dashboard records 18 public repositories.",
+      "bullets": [
+        "Username: Gautam748823.",
+        "Primary repository themes: portfolio architecture, AI productivity systems, computer vision, and backend intelligence.",
+        "Technology distribution includes TypeScript, JavaScript, Python, React, and Node."
+      ],
+      "links": [
+        { "id": "github-section-link", "label": "Open GitHub Section", "href": "#github", "external": false },
+        { "id": "github-profile-link", "label": "Open GitHub Profile", "href": "https://github.com/Gautam748823", "external": true }
+      ],
+      "suggestions": [
+        { "id": "github-projects", "label": "Projects", "intentId": "show_projects" },
+        { "id": "github-contact", "label": "Contact", "intentId": "show_contact" }
+      ]
+    },
+    {
+      "id": "show_contact_response",
+      "title": "Contact channels",
+      "type": "links",
+      "summary": "Gautam is available for opportunities across internships, full-stack development, AI engineering, and open-source collaboration.",
+      "bullets": [
+        "Email: gautam22017@gmail.com.",
+        "Location: Bengaluru, India.",
+        "Status: Available for Opportunities."
+      ],
+      "links": [
+        { "id": "contact-section-link", "label": "Open Contact", "href": "#contact", "external": false },
+        { "id": "email-link", "label": "Email Gautam", "href": "mailto:gautam22017@gmail.com", "external": false },
+        { "id": "linkedin-link", "label": "LinkedIn", "href": "https://www.linkedin.com/in/gautam4875/", "external": true }
+      ],
+      "suggestions": [
+        { "id": "contact-resume", "label": "Resume", "intentId": "show_resume" },
+        { "id": "contact-recruiter", "label": "Recruiter profile", "intentId": "show_recruiter_profile" }
+      ]
+    },
+    {
+      "id": "show_resume_response",
+      "title": "Resume access",
+      "type": "links",
+      "summary": "The portfolio includes Gautam's resume as a local PDF asset for recruiter review.",
+      "bullets": [
+        "Resume intelligence notes B.Tech Computer Science & Engineering, graduation year 2027.",
+        "The profile highlights 5+ projects and 15+ core technologies.",
+        "Focus areas include AI Systems, Full Stack Engineering, Backend Systems, and Computer Vision."
+      ],
+      "links": [
+        { "id": "resume-download-link", "label": "Open Resume", "href": "/Gautam_Kumar_CV_final.pdf", "external": true },
+        { "id": "contact-for-resume-link", "label": "Open Contact", "href": "#contact", "external": false }
+      ],
+      "suggestions": [
+        { "id": "resume-recruiter", "label": "Recruiter Mode", "intentId": "show_recruiter_profile" },
+        { "id": "resume-contact", "label": "Contact", "intentId": "show_contact" }
+      ]
+    },
+    {
+      "id": "show_recruiter_profile_response",
+      "title": "Recruiter profile",
+      "type": "list",
+      "summary": "Recruiter Mode presents Gautam as an AI and full-stack engineering candidate with practical intelligent-system project evidence.",
+      "bullets": [
+        "Candidate focus: AI Systems, Full Stack Development, and Computer Vision.",
+        "Hiring snapshot: 5+ projects, 15+ technologies, 18 GitHub repositories, and phased portfolio execution.",
+        "Top strengths include AI engineering, frontend engineering, system design, computer vision, and problem solving."
+      ],
+      "links": [{ "id": "recruiter-link", "label": "Open Recruiter Mode", "href": "#recruiter", "external": false }],
+      "suggestions": [
+        { "id": "recruiter-resume", "label": "Resume", "intentId": "show_resume" },
+        { "id": "recruiter-contact", "label": "Contact", "intentId": "show_contact" }
+      ]
+    },
+    {
+      "id": "current_focus_response",
+      "title": "Current focus",
+      "type": "list",
+      "summary": "Gautam is currently sharpening AI systems, full-stack development, applied machine learning, computer vision, backend systems, and modular system design.",
+      "bullets": [
+        "AI systems: moving from model demos toward useful workflows and confidence-aware outputs.",
+        "Full-stack development: typed interfaces, backend APIs, data contracts, and recruiter-ready surfaces.",
+        "Applied machine learning: computer vision and classification projects with practical user-facing flows.",
+        "System design: modular architecture, async loading, and clean feature boundaries."
+      ],
+      "links": [
+        { "id": "focus-about-link", "label": "Open About", "href": "#about", "external": false },
+        { "id": "focus-recruiter-link", "label": "Open Recruiter Mode", "href": "#recruiter", "external": false }
+      ],
+      "suggestions": [
+        { "id": "focus-ai", "label": "AI projects", "intentId": "show_ai_projects" },
+        { "id": "focus-tech", "label": "Technologies", "intentId": "technologies" }
+      ]
+    },
+    {
+      "id": "technologies_response",
+      "title": "Technology map",
+      "type": "list",
+      "summary": "Gautam's technology map spans frontend, backend, AI, data, computer vision, cloud, and development workflow tools.",
+      "bullets": [
+        "Frontend: React, TypeScript, Vite, CSS, responsive UI, accessibility.",
+        "Backend: Node.js, Express, FastAPI, REST APIs, authentication, validation.",
+        "AI and vision: LLMs, prompt design, RAG, embeddings, Whisper, TensorFlow, YOLOv8, OpenCV.",
+        "Data and delivery: PostgreSQL, MongoDB, Supabase, Firestore, GitHub Actions, Docker, Vercel."
+      ],
+      "links": [{ "id": "technologies-skills-link", "label": "Open Skills", "href": "#skills", "external": false }],
+      "suggestions": [
+        { "id": "tech-projects", "label": "Projects", "intentId": "show_projects" },
+        { "id": "tech-github", "label": "GitHub", "intentId": "show_github" }
+      ]
+    },
+    {
+      "id": "help_response",
+      "title": "Available commands",
+      "type": "actions",
+      "summary": "Try asking for: who is Gautam, show projects, show AI projects, show skills, journey, achievements, GitHub, contact, resume, recruiter profile, current focus, or technologies.",
+      "bullets": [],
+      "links": [],
+      "suggestions": [
+        { "id": "help-about", "label": "About", "intentId": "who_is_gautam" },
+        { "id": "help-projects", "label": "Projects", "intentId": "show_projects" },
+        { "id": "help-skills", "label": "Skills", "intentId": "show_skills" },
+        { "id": "help-contact", "label": "Contact", "intentId": "show_contact" }
+      ]
+    }
+  ],
+  "suggestedQuestions": [
+    { "id": "question-about", "label": "Who is Gautam?", "prompt": "Who is Gautam?", "intentId": "who_is_gautam" },
+    { "id": "question-projects", "label": "Show projects", "prompt": "Show projects", "intentId": "show_projects" },
+    { "id": "question-ai-projects", "label": "Show AI projects", "prompt": "Show AI projects", "intentId": "show_ai_projects" },
+    { "id": "question-tech", "label": "Technologies", "prompt": "What technologies does Gautam use?", "intentId": "technologies" },
+    { "id": "question-focus", "label": "Current focus", "prompt": "What is Gautam currently learning?", "intentId": "current_focus" }
+  ],
+  "quickActions": [
+    { "id": "quick-about", "label": "About", "intentId": "who_is_gautam" },
+    { "id": "quick-projects", "label": "Projects", "intentId": "show_projects" },
+    { "id": "quick-skills", "label": "Skills", "intentId": "show_skills" },
+    { "id": "quick-achievements", "label": "Achievements", "intentId": "show_achievements" },
+    { "id": "quick-github", "label": "GitHub", "intentId": "show_github" },
+    { "id": "quick-contact", "label": "Contact", "intentId": "show_contact" },
+    { "id": "quick-recruiter", "label": "Recruiter Mode", "intentId": "show_recruiter_profile" }
+  ]
+}

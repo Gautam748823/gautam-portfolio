@@ -26,6 +26,7 @@ import {
 import type { TokenStyle } from '@/design-system/styleTypes';
 import { AboutSection } from '@/features/about';
 import { AchievementIntelligenceDashboard } from '@/features/achievements';
+import { AIAssistantPanel } from '@/features/assistant';
 import { ContactCommandCenter } from '@/features/contact';
 import { GitHubIntelligenceDashboard } from '@/features/github';
 import { BootSequence, useIntroExperience } from '@/features/intro';
@@ -188,6 +189,7 @@ export function AppShell() {
       </main>
 
       <Footer portfolio={portfolio} socials={socials} />
+      {!isBooting ? <AIAssistantPanel /> : null}
     </PageLayout>
   );
 }

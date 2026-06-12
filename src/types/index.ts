@@ -1,6 +1,7 @@
 export * from './Achievement';
 export * from './AchievementDashboard';
 export * from './About';
+export * from './Assistant';
 export * from './Contact';
 export * from './GitHub';
 export * from './Portfolio';
