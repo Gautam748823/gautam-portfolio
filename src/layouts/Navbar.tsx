@@ -9,6 +9,7 @@ const navigationLinks = [
   { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
   { href: '#github', label: 'GitHub' },
+  { href: '#recruiter', label: 'Recruiter' },
   { href: '#achievements', label: 'Achievements' },
   { href: '#contact', label: 'Contact' },
 ] as const;

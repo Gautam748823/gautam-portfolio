@@ -1,0 +1,206 @@
+{
+  "section": {
+    "eyebrow": "Recruiter Command Center",
+    "title": "Recruiter Mode",
+    "description": "A compressed professional briefing designed for rapid candidate evaluation."
+  },
+  "labels": {
+    "executiveSummaryEyebrow": "Executive summary",
+    "executiveSummaryTitle": "Professional snapshot",
+    "snapshotLabel": "Hiring snapshot metrics",
+    "strengthsEyebrow": "Strength matrix",
+    "strengthsTitle": "Role-fit signal map",
+    "projectsEyebrow": "Top project highlights",
+    "projectsTitle": "Relevant work in compact form",
+    "currentFocusEyebrow": "Current focus",
+    "currentFocusTitle": "Engineering direction",
+    "quickActionsEyebrow": "Recruiter quick actions",
+    "quickActionsTitle": "Open the primary decision links",
+    "scoreSuffix": "score"
+  },
+  "executiveSummary": {
+    "headline": "AI and full-stack engineering candidate building practical intelligent systems.",
+    "description": "Gautam Kumar combines computer science coursework with applied projects across AI workflows, computer vision, backend systems, and typed frontend experiences. His portfolio is structured as a recruiter-facing command center with evidence of phased execution and system thinking.",
+    "items": [
+      {
+        "id": "name",
+        "label": "Name",
+        "value": "Gautam Kumar"
+      },
+      {
+        "id": "role",
+        "label": "Role",
+        "value": "AI Engineer and Full Stack Developer"
+      },
+      {
+        "id": "primary-focus",
+        "label": "Primary Focus",
+        "value": "AI Systems, Full Stack Development, Computer Vision"
+      },
+      {
+        "id": "location",
+        "label": "Location",
+        "value": "Bengaluru, India"
+      },
+      {
+        "id": "education",
+        "label": "Education",
+        "value": "B.Tech Computer Science & Engineering, 2027"
+      }
+    ]
+  },
+  "hiringSnapshot": [
+    {
+      "id": "cgpa",
+      "label": "CGPA",
+      "value": "7.36",
+      "description": "Academic progress while shipping applied engineering projects."
+    },
+    {
+      "id": "projects",
+      "label": "Projects",
+      "value": "5+",
+      "description": "AI, computer vision, backend, and full-stack systems."
+    },
+    {
+      "id": "technologies",
+      "label": "Technologies",
+      "value": "15+",
+      "description": "React, TypeScript, Python, FastAPI, OpenCV, model tooling, and data layers."
+    },
+    {
+      "id": "github-repositories",
+      "label": "GitHub Repositories",
+      "value": "18",
+      "description": "Public profile prepared for broader project-specific analytics."
+    },
+    {
+      "id": "portfolio-phases",
+      "label": "Portfolio Phases Completed",
+      "value": "10",
+      "description": "Phased portfolio architecture from shell through recruiter intelligence."
+    },
+    {
+      "id": "systems",
+      "label": "Systems",
+      "value": "7",
+      "description": "Command center, dashboards, project intelligence, contact, and recruiter layers."
+    }
+  ],
+  "strengthMatrix": [
+    {
+      "id": "ai-engineering",
+      "title": "AI Engineering",
+      "score": 88,
+      "description": "Applied AI workflows for summarization, classification, and product intelligence."
+    },
+    {
+      "id": "backend-engineering",
+      "title": "Backend Engineering",
+      "score": 78,
+      "description": "API-oriented project direction with FastAPI, Node, data stores, and loader boundaries."
+    },
+    {
+      "id": "frontend-engineering",
+      "title": "Frontend Engineering",
+      "score": 86,
+      "description": "Typed React interfaces with responsive layouts, data-driven components, and accessible controls."
+    },
+    {
+      "id": "system-design",
+      "title": "System Design",
+      "score": 82,
+      "description": "Modular feature isolation, structured data contracts, and scalable project architecture."
+    },
+    {
+      "id": "computer-vision",
+      "title": "Computer Vision",
+      "score": 84,
+      "description": "Detection and classification project work using OpenCV, YOLO-style pipelines, and image workflows."
+    },
+    {
+      "id": "problem-solving",
+      "title": "Problem Solving",
+      "score": 90,
+      "description": "Turns ambiguous product ideas into scoped systems, milestones, and recruiter-readable outcomes."
+    }
+  ],
+  "topProjects": [
+    {
+      "id": "ai-meeting-lecture-note-taker",
+      "title": "AI Meeting & Lecture Note Taker",
+      "type": "AI Productivity System",
+      "impact": "Converts long spoken sessions into structured notes, summaries, and follow-up intelligence.",
+      "stack": ["React", "FastAPI", "Whisper", "Supabase", "LLMs", "TypeScript"]
+    },
+    {
+      "id": "helmet-violation-detection-system",
+      "title": "Helmet Violation Detection System",
+      "type": "Computer Vision",
+      "impact": "Detects rider and helmet compliance from visual input for traffic safety monitoring.",
+      "stack": ["YOLOv8", "OpenCV", "Python", "FastAPI", "React"]
+    },
+    {
+      "id": "wildlife-conservation-species-identification",
+      "title": "Wildlife Conservation & Species Identification",
+      "type": "Research AI",
+      "impact": "Supports conservation workflows through confidence-ranked species identification.",
+      "stack": ["Python", "TensorFlow", "OpenCV", "React", "FastAPI"]
+    },
+    {
+      "id": "crowdscope-crowd-monitoring-system",
+      "title": "CrowdScope Crowd Monitoring System",
+      "type": "Backend Intelligence",
+      "impact": "Combines ingestion, density signals, and dashboard metrics for crowd monitoring concepts.",
+      "stack": ["Node.js", "FastAPI", "OpenCV", "Firestore", "Analytics"]
+    }
+  ],
+  "currentFocus": [
+    {
+      "id": "ai-systems",
+      "title": "AI Systems",
+      "description": "Moving from model demos toward useful workflows with summaries, classifications, and confidence-aware outputs."
+    },
+    {
+      "id": "full-stack-development",
+      "title": "Full Stack Development",
+      "description": "Building typed interfaces, backend APIs, data contracts, and recruiter-ready product surfaces."
+    },
+    {
+      "id": "applied-machine-learning",
+      "title": "Applied Machine Learning",
+      "description": "Strengthening computer vision and classification projects with practical user-facing flows."
+    },
+    {
+      "id": "system-design",
+      "title": "System Design",
+      "description": "Practicing modular architecture, async data loading, and feature boundaries that can scale."
+    }
+  ],
+  "quickActions": [
+    {
+      "id": "resume",
+      "label": "Resume",
+      "href": "/Gautam_Kumar_CV_final.pdf",
+      "external": true
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "href": "https://github.com/Gautam748823",
+      "external": true
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/gautam4875/",
+      "external": true
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "href": "mailto:gautam22017@gmail.com",
+      "external": false
+    }
+  ]
+}
