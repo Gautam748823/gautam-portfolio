@@ -18,3 +18,4 @@ export { skillLoader } from './loaders/skillLoader';
 export { socialLoader } from './loaders/socialLoader';
 export { terminalLoader } from './loaders/terminalLoader';
 export { timelineLoader } from './loaders/timelineLoader';
+export { voiceLoader } from './loaders/voiceLoader';

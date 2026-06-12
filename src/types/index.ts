@@ -13,3 +13,4 @@ export * from './SkillGraph';
 export * from './Social';
 export * from './Terminal';
 export * from './Timeline';
+export * from './Voice';

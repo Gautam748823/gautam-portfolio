@@ -35,6 +35,7 @@ import { RecruiterModeSection } from '@/features/recruiter';
 import { SkillsSection } from '@/features/skills';
 import { TerminalMode } from '@/features/terminal';
 import { JourneyTimeline } from '@/features/timeline';
+import { VoiceMode } from '@/features/voice';
 import { HeroSection } from '@/sections/HeroSection';
 import type {
   AboutContent,
@@ -191,6 +192,7 @@ export function AppShell() {
 
       <Footer portfolio={portfolio} socials={socials} />
       {!isBooting ? <TerminalMode /> : null}
+      {!isBooting ? <VoiceMode /> : null}
       {!isBooting ? <AIAssistantPanel /> : null}
     </PageLayout>
   );

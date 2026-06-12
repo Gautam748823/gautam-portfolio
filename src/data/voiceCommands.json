@@ -1,0 +1,115 @@
+{
+  "system": {
+    "title": "Voice Portfolio System",
+    "subtitle": "Spoken Portfolio Navigation",
+    "idleMessage": "Tap voice mode and say a portfolio command such as projects, skills, recruiter, or contact.",
+    "unsupportedMessage": "Voice recognition is not supported in this browser. You can still use the command suggestions.",
+    "fallbackResponse": "I could not match that voice command. Try saying help, projects, skills, GitHub, recruiter, contact, or resume."
+  },
+  "commands": [
+    {
+      "id": "home",
+      "label": "Home",
+      "spokenPhrases": ["home", "go home", "open home", "show home", "top"],
+      "actionType": "navigate",
+      "targetSection": "main-content",
+      "response": "Opening the portfolio home."
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "spokenPhrases": ["about", "go to about", "open about", "show about", "who is gautam"],
+      "actionType": "navigate",
+      "targetSection": "about",
+      "response": "Opening Gautam's identity briefing."
+    },
+    {
+      "id": "journey",
+      "label": "Journey",
+      "spokenPhrases": ["journey", "go to journey", "open journey", "show timeline", "show journey"],
+      "actionType": "navigate",
+      "targetSection": "journey",
+      "response": "Opening the journey timeline."
+    },
+    {
+      "id": "skills",
+      "label": "Skills",
+      "spokenPhrases": ["skills", "go to skills", "open skills", "show skills", "capabilities"],
+      "actionType": "navigate",
+      "targetSection": "skills",
+      "response": "Opening the skills graph."
+    },
+    {
+      "id": "projects",
+      "label": "Projects",
+      "spokenPhrases": ["projects", "go to projects", "open projects", "show projects", "project intelligence"],
+      "actionType": "navigate",
+      "targetSection": "projects",
+      "response": "Opening the project intelligence layer."
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "spokenPhrases": ["github", "go to github", "open github", "show github", "github dashboard"],
+      "actionType": "navigate",
+      "targetSection": "github",
+      "response": "Showing GitHub intelligence."
+    },
+    {
+      "id": "recruiter",
+      "label": "Recruiter",
+      "spokenPhrases": ["recruiter", "go to recruiter", "open recruiter", "show recruiter", "recruiter mode"],
+      "actionType": "navigate",
+      "targetSection": "recruiter",
+      "response": "Navigating to recruiter mode."
+    },
+    {
+      "id": "achievements",
+      "label": "Achievements",
+      "spokenPhrases": ["achievements", "go to achievements", "open achievements", "show achievements", "proof of impact"],
+      "actionType": "navigate",
+      "targetSection": "achievements",
+      "response": "Opening achievement intelligence."
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "spokenPhrases": ["contact", "contact gautam", "go to contact", "open contact", "show contact"],
+      "actionType": "navigate",
+      "targetSection": "contact",
+      "response": "Opening contact command center."
+    },
+    {
+      "id": "resume",
+      "label": "Resume",
+      "spokenPhrases": ["resume", "open resume", "show resume", "download resume", "cv"],
+      "actionType": "external_link",
+      "targetSection": "/Gautam_Kumar_CV_final.pdf",
+      "response": "Opening Gautam's resume."
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "spokenPhrases": ["linkedin", "open linkedin", "show linkedin", "linkedin profile"],
+      "actionType": "external_link",
+      "targetSection": "https://www.linkedin.com/in/gautam4875/",
+      "response": "Opening Gautam's LinkedIn profile."
+    },
+    {
+      "id": "github-profile",
+      "label": "GitHub Profile",
+      "spokenPhrases": ["github profile", "open github profile", "show github profile", "open code profile"],
+      "actionType": "external_link",
+      "targetSection": "https://github.com/Gautam748823",
+      "response": "Opening Gautam's GitHub profile."
+    },
+    {
+      "id": "help",
+      "label": "Help",
+      "spokenPhrases": ["help", "voice help", "commands", "show commands", "what can i say"],
+      "actionType": "help",
+      "targetSection": null,
+      "response": "You can say home, about, journey, skills, projects, GitHub, recruiter, achievements, contact, resume, LinkedIn, or GitHub profile."
+    }
+  ]
+}
