@@ -1,0 +1,261 @@
+.achievement-dashboard {
+  position: relative;
+  scroll-margin-top: 4.5rem;
+  border-top: 1px solid var(--shell-border);
+  background:
+    radial-gradient(circle at 18% 18%, rgb(0 229 255 / 0.095), transparent 22rem),
+    radial-gradient(circle at 84% 78%, rgb(255 255 255 / 0.05), transparent 18rem),
+    linear-gradient(180deg, transparent, rgb(0 229 255 / 0.026), transparent);
+}
+
+.achievement-dashboard__layout,
+.achievement-panel,
+.achievement-academic-panel,
+.achievement-metric-card,
+.achievement-milestone-card,
+.achievement-learning-card,
+.achievement-roadmap-card {
+  display: grid;
+  gap: var(--shell-space-md);
+}
+
+.achievement-dashboard__layout {
+  gap: var(--shell-space-xl);
+}
+
+.achievement-metrics,
+.achievement-academic-grid,
+.achievement-learning-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--shell-space-md);
+}
+
+.achievement-metric-card,
+.achievement-academic-panel,
+.achievement-milestone-card,
+.achievement-learning-card,
+.achievement-roadmap-card {
+  transition:
+    border-color var(--shell-transition),
+    box-shadow var(--shell-transition),
+    transform var(--shell-transition);
+}
+
+.achievement-metric-card:hover,
+.achievement-academic-panel:hover,
+.achievement-milestone-card:hover,
+.achievement-learning-card:hover,
+.achievement-roadmap-card:hover,
+.achievement-milestone-card:focus-within,
+.achievement-learning-card:focus-within,
+.achievement-roadmap-card:focus-within {
+  border-color: var(--shell-cyan);
+  box-shadow: var(--shell-glow-subtle);
+  transform: translateY(-0.12rem);
+}
+
+.achievement-panel-header {
+  display: grid;
+  gap: var(--shell-space-sm);
+}
+
+.achievement-panel-header span,
+.achievement-metric-card span,
+.achievement-learning-card span,
+.achievement-roadmap-card span {
+  color: var(--shell-cyan);
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-bold);
+  letter-spacing: var(--shell-tracking-wide);
+  text-transform: uppercase;
+}
+
+.achievement-panel-header h3 {
+  color: var(--shell-white);
+  font-size: var(--shell-font-2xl);
+  line-height: var(--shell-line-tight);
+}
+
+.achievement-metric-card strong {
+  color: var(--shell-white);
+  font-size: var(--shell-font-3xl);
+  font-weight: var(--shell-weight-bold);
+  line-height: var(--shell-line-tight);
+}
+
+.achievement-metric-card p,
+.achievement-academic-grid p,
+.achievement-milestone-card p,
+.achievement-learning-card p,
+.achievement-roadmap-card p {
+  color: var(--shell-muted);
+  line-height: var(--shell-line-relaxed);
+}
+
+.achievement-academic-grid {
+  margin: 0;
+}
+
+.achievement-academic-grid div {
+  display: grid;
+  gap: var(--shell-space-xs);
+  padding: var(--shell-space-sm);
+  border: 1px solid var(--shell-border);
+  border-radius: var(--shell-radius-md);
+  background: rgb(255 255 255 / 0.035);
+}
+
+.achievement-academic-grid dt,
+.achievement-milestone-card dt {
+  color: var(--shell-muted);
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-bold);
+  letter-spacing: var(--shell-tracking-wide);
+  text-transform: uppercase;
+}
+
+.achievement-academic-grid dd,
+.achievement-milestone-card dd {
+  margin: 0;
+  color: var(--shell-white);
+  font-weight: var(--shell-weight-semibold);
+}
+
+.achievement-timeline,
+.achievement-roadmap {
+  display: grid;
+  gap: var(--shell-space-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.achievement-timeline__item {
+  position: relative;
+  padding-left: var(--shell-space-xl);
+}
+
+.achievement-timeline__item::before {
+  content: '';
+  position: absolute;
+  top: var(--shell-space-xl);
+  left: 0.34rem;
+  width: 1px;
+  height: calc(100% + var(--shell-space-md));
+  background: var(--shell-border);
+}
+
+.achievement-timeline__item:last-child::before {
+  display: none;
+}
+
+.achievement-timeline__item::after {
+  content: '';
+  position: absolute;
+  top: var(--shell-space-xl);
+  left: 0;
+  width: 0.72rem;
+  aspect-ratio: 1;
+  border-radius: var(--shell-radius-full);
+  background: var(--shell-cyan);
+  box-shadow: var(--shell-glow-subtle);
+}
+
+.achievement-milestone-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--shell-space-sm);
+}
+
+.achievement-milestone-card h4,
+.achievement-learning-card h4,
+.achievement-roadmap-card h4 {
+  color: var(--shell-white);
+  font-size: var(--shell-font-lg);
+  line-height: var(--shell-line-tight);
+}
+
+.achievement-milestone-card__details {
+  display: grid;
+  gap: var(--shell-space-sm);
+  margin: 0;
+}
+
+.achievement-milestone-card__details div {
+  display: grid;
+  gap: var(--shell-space-xs);
+}
+
+.achievement-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--shell-space-xs);
+}
+
+.achievement-tags span {
+  padding: var(--shell-space-xs) var(--shell-space-sm);
+  border: 1px solid var(--shell-border);
+  border-radius: var(--shell-radius-full);
+  background: rgb(255 255 255 / 0.04);
+  color: var(--shell-white);
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-semibold);
+}
+
+.achievement-dashboard__split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: var(--shell-space-lg);
+}
+
+.achievement-learning-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.achievement-learning-card strong {
+  color: var(--shell-white);
+  font-size: var(--shell-font-sm);
+  line-height: var(--shell-line-relaxed);
+}
+
+@media (max-width: 72rem) {
+  .achievement-metrics,
+  .achievement-academic-grid,
+  .achievement-dashboard__split,
+  .achievement-learning-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .achievement-timeline__item {
+    padding-left: var(--shell-space-lg);
+  }
+
+  .achievement-milestone-card__header {
+    display: grid;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .achievement-metric-card,
+  .achievement-academic-panel,
+  .achievement-milestone-card,
+  .achievement-learning-card,
+  .achievement-roadmap-card {
+    transition: none;
+  }
+
+  .achievement-metric-card:hover,
+  .achievement-academic-panel:hover,
+  .achievement-milestone-card:hover,
+  .achievement-learning-card:hover,
+  .achievement-roadmap-card:hover,
+  .achievement-milestone-card:focus-within,
+  .achievement-learning-card:focus-within,
+  .achievement-roadmap-card:focus-within {
+    transform: none;
+  }
+}

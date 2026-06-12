@@ -1,0 +1,176 @@
+{
+  "section": {
+    "eyebrow": "Proof of impact",
+    "title": "Achievement Intelligence",
+    "description": "Engineering growth, learning momentum, and proof-of-execution signals."
+  },
+  "labels": {
+    "metrics": "Achievement metrics",
+    "academicPanelEyebrow": "Academic intelligence",
+    "academicPanelTitle": "Education signals",
+    "milestonesPanelEyebrow": "Engineering milestones",
+    "milestonesPanelTitle": "Proof-of-execution timeline",
+    "learningPanelEyebrow": "Learning signals",
+    "learningPanelTitle": "Technical growth indicators",
+    "roadmapPanelEyebrow": "Future achievement roadmap",
+    "roadmapPanelTitle": "Next milestones",
+    "statusLabel": "Status",
+    "impactLabel": "Impact",
+    "technologiesLabel": "Technologies"
+  },
+  "metrics": [
+    {
+      "id": "projects-built",
+      "label": "Projects Built",
+      "value": "4+",
+      "description": "Applied AI, computer vision, full stack, and automation systems."
+    },
+    {
+      "id": "portfolio-phases",
+      "label": "Portfolio Phases",
+      "value": "9",
+      "description": "Structured execution across identity, journey, skills, projects, GitHub, and achievements."
+    },
+    {
+      "id": "technologies-used",
+      "label": "Technologies",
+      "value": "15+",
+      "description": "Practical exposure across frontend, backend, AI, data, and deployment workflows."
+    },
+    {
+      "id": "active-systems",
+      "label": "Active Systems",
+      "value": "6",
+      "description": "Recruiter-facing dashboards, intelligence panels, and portfolio command layers."
+    }
+  ],
+  "academicSignals": [
+    {
+      "id": "degree",
+      "label": "Degree",
+      "value": "B.Tech Computer Science",
+      "description": "Core engineering foundation focused on software systems and applied computing."
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "value": "University coursework",
+      "description": "Academic path aligned with AI engineering, full stack development, and system design."
+    },
+    {
+      "id": "cgpa",
+      "label": "CGPA",
+      "value": "8.0+",
+      "description": "Consistent academic progress while building applied engineering projects."
+    },
+    {
+      "id": "graduation",
+      "label": "Expected Graduation",
+      "value": "2027",
+      "description": "Current focus on production-grade portfolio systems and AI project depth."
+    }
+  ],
+  "engineeringMilestones": [
+    {
+      "id": "helmet-violation-detection",
+      "title": "Helmet Violation Detection System",
+      "description": "Computer vision workflow for identifying rider safety compliance from visual input.",
+      "status": "completed",
+      "impact": "Demonstrates applied object detection thinking for civic and safety-oriented use cases.",
+      "technologies": ["Python", "Computer Vision", "OpenCV", "AI"]
+    },
+    {
+      "id": "ai-meeting-note-taker",
+      "title": "AI Meeting & Lecture Note Taker",
+      "description": "AI productivity system for converting spoken or long-form sessions into structured notes.",
+      "status": "active",
+      "impact": "Shows product thinking around summarization, knowledge capture, and student workflows.",
+      "technologies": ["AI", "Speech Processing", "Summarization", "Full Stack"]
+    },
+    {
+      "id": "wildlife-species-identification",
+      "title": "Wildlife Species Identification",
+      "description": "Image intelligence concept for classifying wildlife species from visual evidence.",
+      "status": "completed",
+      "impact": "Connects machine learning foundations with conservation-oriented recognition systems.",
+      "technologies": ["Machine Learning", "Computer Vision", "Python", "Classification"]
+    },
+    {
+      "id": "plant-disease-detection",
+      "title": "AI Plant Disease Detection",
+      "description": "Agriculture-focused AI system for recognizing plant disease signals from images.",
+      "status": "active",
+      "impact": "Highlights ability to translate AI models into practical diagnosis support tools.",
+      "technologies": ["AI", "Image Processing", "Python", "Deep Learning"]
+    }
+  ],
+  "learningSignals": [
+    {
+      "id": "ai-engineering",
+      "title": "AI Engineering",
+      "level": "Active growth",
+      "description": "Building applied systems around summarization, classification, and intelligent automation.",
+      "evidence": "AI note-taking, plant disease detection, and vision-based project work."
+    },
+    {
+      "id": "full-stack-development",
+      "title": "Full Stack Development",
+      "level": "Applied",
+      "description": "Creating typed, component-driven user experiences with clean data boundaries.",
+      "evidence": "Portfolio command center phases and recruiter-facing dashboards."
+    },
+    {
+      "id": "system-design",
+      "title": "System Design",
+      "level": "Foundation",
+      "description": "Practicing modular architecture, loader contracts, feature isolation, and scalable content models.",
+      "evidence": "Phase-based portfolio architecture with typed data layers."
+    },
+    {
+      "id": "computer-vision",
+      "title": "Computer Vision",
+      "level": "Project proven",
+      "description": "Exploring detection and classification workflows for real-world visual intelligence.",
+      "evidence": "Helmet violation, wildlife species, and plant disease systems."
+    },
+    {
+      "id": "backend-engineering",
+      "title": "Backend Engineering",
+      "level": "Expanding",
+      "description": "Growing toward API-backed products, persistence layers, and production service design.",
+      "evidence": "Prepared loader architecture for future service and CMS migration."
+    }
+  ],
+  "futureRoadmap": [
+    {
+      "id": "open-source-contributions",
+      "title": "Open Source Contributions",
+      "description": "Contribute fixes, documentation, and feature work to public engineering communities.",
+      "status": "planned"
+    },
+    {
+      "id": "hackathons",
+      "title": "Hackathons",
+      "description": "Use timed build environments to sharpen execution, teamwork, and product validation.",
+      "status": "planned"
+    },
+    {
+      "id": "research-publication",
+      "title": "Research Publication",
+      "description": "Convert AI project learnings into a formal research or technical write-up.",
+      "status": "planned"
+    },
+    {
+      "id": "production-saas-launch",
+      "title": "Production SaaS Launch",
+      "description": "Ship a hosted product with auth, persistence, analytics, and live user feedback.",
+      "status": "planned"
+    },
+    {
+      "id": "advanced-ai-systems",
+      "title": "Advanced AI Systems",
+      "description": "Move from model demos toward multi-step AI workflows and reliable production behavior.",
+      "status": "planned"
+    }
+  ]
+}
