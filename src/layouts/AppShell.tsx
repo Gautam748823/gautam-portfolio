@@ -33,6 +33,7 @@ import { BootSequence, useIntroExperience } from '@/features/intro';
 import { ProjectsSection } from '@/features/projects';
 import { RecruiterModeSection } from '@/features/recruiter';
 import { SkillsSection } from '@/features/skills';
+import { TerminalMode } from '@/features/terminal';
 import { JourneyTimeline } from '@/features/timeline';
 import { HeroSection } from '@/sections/HeroSection';
 import type {
@@ -189,6 +190,7 @@ export function AppShell() {
       </main>
 
       <Footer portfolio={portfolio} socials={socials} />
+      {!isBooting ? <TerminalMode /> : null}
       {!isBooting ? <AIAssistantPanel /> : null}
     </PageLayout>
   );

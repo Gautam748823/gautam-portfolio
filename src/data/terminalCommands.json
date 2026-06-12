@@ -1,0 +1,79 @@
+{
+  "welcome": {
+    "title": "GAUTAM COMMAND TERMINAL",
+    "subtitle": "Portfolio Intelligence Console",
+    "instruction": "Type \"help\" to view available commands."
+  },
+  "unknownCommand": {
+    "response": "Unknown command.\n\nTry:\nhelp\nabout\nprojects\nskills\ncontact",
+    "suggestions": ["help", "about", "projects", "skills", "contact"]
+  },
+  "commands": [
+    {
+      "command": "help",
+      "description": "Show available terminal commands",
+      "response": "Available commands:\nhelp - Show available commands\nabout - Show portfolio identity summary\nskills - Show Gautam's capability map\nprojects - Show project intelligence\njourney - Show engineering journey\ngithub - Show GitHub profile signals\nachievements - Show proof-of-execution signals\nrecruiter - Show recruiter profile\ncontact - Show contact channels\nresume - Show resume access\nclear - Clear terminal history",
+      "suggestions": ["about", "skills", "projects", "contact"]
+    },
+    {
+      "command": "about",
+      "description": "Show portfolio identity summary",
+      "response": "Gautam Kumar is an AI Engineer and Full Stack Developer in Bengaluru, India. He builds practical intelligent systems, typed React interfaces, backend-oriented workflows, and recruiter-facing product experiences.",
+      "suggestions": ["skills", "projects", "journey", "contact"]
+    },
+    {
+      "command": "skills",
+      "description": "Show Gautam's capability map",
+      "response": "Core skill signals:\nFrontend Engineering\nBackend Engineering\nAI Engineering\nDatabases\nCloud\nDevOps\nSystem Design\nDeveloper Tools",
+      "suggestions": ["projects", "github", "achievements"]
+    },
+    {
+      "command": "projects",
+      "description": "Show project intelligence",
+      "response": "Project intelligence:\nAI Meeting & Lecture Note Taker\nHelmet Violation Detection System\nWildlife Conservation & Species Identification\nAI Plant Disease Detection\nCrowdScope Crowd Monitoring System",
+      "suggestions": ["skills", "github", "recruiter"]
+    },
+    {
+      "command": "journey",
+      "description": "Show engineering journey",
+      "response": "Journey signals include React and TypeScript foundations, typed data loaders, AI command-center design systems, identity systems, AI learning loops, and full-stack engineering practice.",
+      "suggestions": ["about", "skills", "achievements"]
+    },
+    {
+      "command": "github",
+      "description": "Show GitHub profile signals",
+      "response": "GitHub profile: Gautam748823\nPublic repositories: 18\nPrimary signals: AI systems, full-stack engineering, backend practice, computer vision, TypeScript, Python, React, and Node.",
+      "suggestions": ["projects", "skills", "contact"]
+    },
+    {
+      "command": "achievements",
+      "description": "Show proof-of-execution signals",
+      "response": "Achievement intelligence highlights applied AI projects, computer vision systems, full-stack portfolio phases, technology breadth, academic progress, and current learning momentum.",
+      "suggestions": ["projects", "journey", "recruiter"]
+    },
+    {
+      "command": "recruiter",
+      "description": "Show recruiter profile",
+      "response": "Recruiter profile: AI and full-stack engineering candidate with practical intelligent-system project evidence. Focus areas include AI Systems, Full Stack Development, Computer Vision, Backend Systems, and System Design.",
+      "suggestions": ["resume", "contact", "projects"]
+    },
+    {
+      "command": "contact",
+      "description": "Show contact channels",
+      "response": "Contact channels:\nEmail: gautam22017@gmail.com\nGitHub: github.com/Gautam748823\nLinkedIn: linkedin.com/in/gautam4875\nLocation: Bengaluru, India\nStatus: Available for Opportunities",
+      "suggestions": ["resume", "recruiter", "github"]
+    },
+    {
+      "command": "resume",
+      "description": "Show resume access",
+      "response": "Resume access: /Gautam_Kumar_CV_final.pdf\nResume intelligence: B.Tech Computer Science & Engineering, expected graduation 2027, 5+ projects, 15+ core technologies, and focus areas across AI, full stack, backend, and computer vision.",
+      "suggestions": ["recruiter", "contact", "projects"]
+    },
+    {
+      "command": "clear",
+      "description": "Clear terminal history",
+      "response": "Terminal history cleared.",
+      "suggestions": ["help", "about", "projects"]
+    }
+  ]
+}
