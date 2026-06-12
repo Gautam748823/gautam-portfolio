@@ -1,4 +1,5 @@
 export * from './Achievement';
+export * from './AchievementDashboard';
 export * from './About';
 export * from './Contact';
 export * from './GitHub';

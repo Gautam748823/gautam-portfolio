@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { PageLayout } from '@/components/layout';
 import {
   aboutLoader,
+  achievementDashboardLoader,
   contactLoader,
   githubLoader,
   portfolioLoader,
@@ -23,6 +24,7 @@ import {
 } from '@/design-system/tokens';
 import type { TokenStyle } from '@/design-system/styleTypes';
 import { AboutSection } from '@/features/about';
+import { AchievementIntelligenceDashboard } from '@/features/achievements';
 import { ContactCommandCenter } from '@/features/contact';
 import { GitHubIntelligenceDashboard } from '@/features/github';
 import { BootSequence, useIntroExperience } from '@/features/intro';
@@ -32,6 +34,7 @@ import { JourneyTimeline } from '@/features/timeline';
 import { HeroSection } from '@/sections/HeroSection';
 import type {
   AboutContent,
+  AchievementDashboardContent,
   ContactContent,
   GitHubDashboardContent,
   PortfolioMetadata,
@@ -47,6 +50,8 @@ import './shell.css';
 
 export function AppShell() {
   const [about, setAbout] = useState<AboutContent | null>(null);
+  const [achievementDashboard, setAchievementDashboard] =
+    useState<AchievementDashboardContent | null>(null);
   const [contact, setContact] = useState<ContactContent | null>(null);
   const [githubDashboard, setGithubDashboard] = useState<GitHubDashboardContent | null>(null);
   const [portfolio, setPortfolio] = useState<PortfolioMetadata | null>(null);
@@ -61,6 +66,7 @@ export function AppShell() {
 
     void Promise.all([
       aboutLoader.getAll(),
+      achievementDashboardLoader.getDashboard(),
       contactLoader.getAll(),
       githubLoader.getDashboard(),
       portfolioLoader.getAll(),
@@ -71,6 +77,7 @@ export function AppShell() {
     ]).then(
       ([
         aboutData,
+        achievementDashboardData,
         contactData,
         githubDashboardData,
         portfolioData,
@@ -81,6 +88,7 @@ export function AppShell() {
       ]) => {
         if (isActive) {
           setAbout(aboutData);
+          setAchievementDashboard(achievementDashboardData);
           setContact(contactData);
           setGithubDashboard(githubDashboardData);
           setPortfolio(portfolioData);
@@ -167,6 +175,7 @@ export function AppShell() {
         <SkillsSection skillGraph={skillGraph} />
         <ProjectsSection projects={projects} />
         <GitHubIntelligenceDashboard dashboard={githubDashboard} />
+        <AchievementIntelligenceDashboard dashboard={achievementDashboard} />
         <ContactCommandCenter contact={contact} />
       </main>
 

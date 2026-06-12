@@ -1,4 +1,5 @@
 export { aboutLoader } from './loaders/aboutLoader';
+export { achievementDashboardLoader } from './loaders/achievementDashboardLoader';
 export { achievementLoader } from './loaders/achievementLoader';
 export { contactLoader } from './loaders/contactLoader';
 export { githubLoader } from './loaders/githubLoader';
