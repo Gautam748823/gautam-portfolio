@@ -1,0 +1,583 @@
+.analytics-command-center {
+  position: relative;
+  scroll-margin-top: 4.5rem;
+  border-top: 1px solid var(--shell-border);
+  background:
+    linear-gradient(rgb(0 229 255 / 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(0 229 255 / 0.035) 1px, transparent 1px),
+    radial-gradient(circle at 16% 18%, rgb(0 229 255 / 0.11), transparent 24rem),
+    linear-gradient(180deg, rgb(5 8 22 / 0.22), rgb(0 229 255 / 0.025), transparent);
+  background-size:
+    3.5rem 3.5rem,
+    3.5rem 3.5rem,
+    auto,
+    auto;
+}
+
+.analytics-command-center__layout,
+.analytics-panel,
+.analytics-summary,
+.analytics-metric,
+.analytics-signal-panel,
+.analytics-progress-panel,
+.analytics-radar-panel,
+.analytics-focus-card,
+.analytics-growth-card,
+.analytics-roadmap-card,
+.analytics-insights {
+  display: grid;
+  gap: var(--shell-space-md);
+}
+
+.analytics-command-center__layout {
+  gap: var(--shell-space-xl);
+}
+
+.analytics-panel-header {
+  display: grid;
+  gap: var(--shell-space-sm);
+}
+
+.analytics-panel-header > span,
+.analytics-metric > span,
+.analytics-focus-card > div:last-child > span,
+.analytics-growth-card__header span,
+.analytics-roadmap-card > span {
+  color: var(--shell-cyan);
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-bold);
+  letter-spacing: var(--shell-tracking-wide);
+  text-transform: uppercase;
+}
+
+.analytics-panel-header h3 {
+  color: var(--shell-white);
+  font-size: var(--shell-font-2xl);
+  line-height: var(--shell-line-tight);
+}
+
+.analytics-summary,
+.analytics-metric,
+.analytics-signal-panel,
+.analytics-progress-panel,
+.analytics-radar-panel,
+.analytics-focus-card,
+.analytics-growth-card,
+.analytics-roadmap-card,
+.analytics-insights {
+  min-width: 0;
+  transition:
+    border-color var(--shell-transition),
+    box-shadow var(--shell-transition),
+    transform var(--shell-transition);
+}
+
+.analytics-summary:hover,
+.analytics-metric:hover,
+.analytics-signal-panel:hover,
+.analytics-progress-panel:hover,
+.analytics-radar-panel:hover,
+.analytics-focus-card:hover,
+.analytics-growth-card:hover,
+.analytics-roadmap-card:hover,
+.analytics-insights:hover {
+  border-color: var(--shell-cyan);
+  box-shadow: var(--shell-glow-subtle);
+  transform: translateY(-0.12rem);
+}
+
+.analytics-summary__body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.16fr) minmax(16rem, 0.84fr);
+  gap: var(--shell-space-lg);
+}
+
+.analytics-summary__copy {
+  display: grid;
+  align-content: start;
+  gap: var(--shell-space-sm);
+}
+
+.analytics-summary__copy h4 {
+  max-width: 36ch;
+  color: var(--shell-white);
+  font-size: var(--shell-font-xl);
+  line-height: var(--shell-line-tight);
+}
+
+.analytics-summary__copy p,
+.analytics-metric p,
+.analytics-signal p,
+.analytics-progress-row small,
+.analytics-radar__legend p,
+.analytics-focus-card p,
+.analytics-growth-card p,
+.analytics-learning-item small,
+.analytics-roadmap-card p,
+.analytics-insights p {
+  color: var(--shell-muted);
+  line-height: var(--shell-line-relaxed);
+}
+
+.analytics-summary__facts {
+  display: grid;
+  gap: var(--shell-space-sm);
+  margin: 0;
+}
+
+.analytics-summary__facts div,
+.analytics-radar__legend div,
+.analytics-learning-item,
+.analytics-insights dl div {
+  padding: var(--shell-space-sm);
+  border: 1px solid var(--shell-border);
+  border-radius: var(--shell-radius-md);
+  background: rgb(255 255 255 / 0.035);
+}
+
+.analytics-summary__facts dt,
+.analytics-radar__legend dt,
+.analytics-insights dt {
+  color: var(--shell-muted);
+  font-size: var(--shell-font-xs);
+  font-weight: var(--shell-weight-bold);
+  letter-spacing: var(--shell-tracking-wide);
+  text-transform: uppercase;
+}
+
+.analytics-summary__facts dd,
+.analytics-radar__legend dd,
+.analytics-insights dd {
+  margin: var(--shell-space-xs) 0 0;
+  color: var(--shell-white);
+  font-weight: var(--shell-weight-semibold);
+  overflow-wrap: anywhere;
+}
+
+.analytics-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--shell-space-md);
+}
+
+.analytics-metric {
+  position: relative;
+  min-height: 11rem;
+  align-content: start;
+  overflow: hidden;
+}
+
+.analytics-metric::after {
+  position: absolute;
+  top: var(--shell-space-md);
+  right: var(--shell-space-md);
+  width: 0.55rem;
+  aspect-ratio: 1;
+  border-radius: var(--shell-radius-full);
+  background: var(--shell-muted);
+  content: '';
+}
+
+.analytics-metric--cyan::after {
+  background: var(--shell-cyan);
+  box-shadow: var(--shell-glow-subtle);
+}
+
+.analytics-metric--positive::after {
+  background: #68f0b2;
+  box-shadow: 0 0 1rem rgb(104 240 178 / 0.45);
+}
+
+.analytics-metric strong {
+  color: var(--shell-white);
+  font-size: var(--shell-font-3xl);
+  line-height: var(--shell-line-tight);
+}
+
+.analytics-command-center__split {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: var(--shell-space-lg);
+  align-items: stretch;
+}
+
+.analytics-signal-list,
+.analytics-progress-group,
+.analytics-learning-list,
+.analytics-insights dl {
+  display: grid;
+  gap: var(--shell-space-md);
+}
+
+.analytics-signal {
+  display: grid;
+  gap: var(--shell-space-sm);
+}
+
+.analytics-signal__meta,
+.analytics-progress-row__meta,
+.analytics-learning-item__meta,
+.analytics-growth-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--shell-space-sm);
+}
+
+.analytics-signal__meta > div {
+  display: grid;
+  gap: var(--shell-space-xs);
+}
+
+.analytics-signal h4,
+.analytics-progress-group h4,
+.analytics-focus-card h4,
+.analytics-growth-card h4,
+.analytics-roadmap-card h4 {
+  color: var(--shell-white);
+  font-size: var(--shell-font-lg);
+  line-height: var(--shell-line-tight);
+}
+
+.analytics-signal__meta strong,
+.analytics-progress-row__meta strong,
+.analytics-learning-item__meta strong {
+  color: var(--shell-cyan);
+  white-space: nowrap;
+}
+
+.analytics-track {
+  height: 0.58rem;
+  overflow: hidden;
+  border: 1px solid var(--shell-border);
+  border-radius: var(--shell-radius-full);
+  background: rgb(255 255 255 / 0.06);
+}
+
+.analytics-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--shell-cyan), var(--shell-white));
+  box-shadow: var(--shell-glow-subtle);
+  transition: width var(--shell-transition-slow);
+}
+
+.analytics-track--project span {
+  background: linear-gradient(90deg, #68f0b2, var(--shell-cyan));
+}
+
+.analytics-progress-panel__split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--shell-space-xl);
+}
+
+.analytics-progress-row {
+  display: grid;
+  gap: var(--shell-space-xs);
+}
+
+.analytics-progress-row__meta span {
+  color: var(--shell-white);
+  font-size: var(--shell-font-sm);
+  font-weight: var(--shell-weight-semibold);
+}
+
+.analytics-progress-row small {
+  font-size: var(--shell-font-xs);
+}
+
+.analytics-radar {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.86fr) minmax(0, 1.14fr);
+  gap: var(--shell-space-md);
+  align-items: center;
+}
+
+.analytics-radar__chart {
+  width: 100%;
+  max-width: 25rem;
+  aspect-ratio: 1;
+  margin-inline: auto;
+  overflow: visible;
+  filter: drop-shadow(0 0 1rem rgb(0 229 255 / 0.12));
+}
+
+.analytics-radar__grid,
+.analytics-radar__axis {
+  fill: rgb(0 229 255 / 0.018);
+  stroke: rgb(255 255 255 / 0.15);
+  stroke-width: 1;
+}
+
+.analytics-radar__value {
+  fill: rgb(0 229 255 / 0.18);
+  stroke: var(--shell-cyan);
+  stroke-width: 2;
+}
+
+.analytics-radar__point {
+  fill: var(--shell-white);
+  stroke: var(--shell-cyan);
+  stroke-width: 2;
+}
+
+.analytics-radar__legend {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--shell-space-sm);
+  margin: 0;
+}
+
+.analytics-radar__legend div {
+  min-width: 0;
+}
+
+.analytics-radar__legend dd {
+  color: var(--shell-cyan);
+  font-size: var(--shell-font-lg);
+}
+
+.analytics-radar__legend p {
+  margin-top: var(--shell-space-xs);
+  font-size: var(--shell-font-xs);
+}
+
+.analytics-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--shell-space-md);
+}
+
+.analytics-focus-card {
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+}
+
+.analytics-focus-card__indicator {
+  display: grid;
+  width: 3.75rem;
+  aspect-ratio: 1;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: var(--shell-radius-full);
+  background: conic-gradient(
+    var(--shell-cyan) var(--analytics-progress),
+    rgb(255 255 255 / 0.08) 0
+  );
+  box-shadow: var(--shell-glow-subtle);
+}
+
+.analytics-focus-card__indicator::before {
+  grid-area: 1 / 1;
+  width: calc(100% - 0.55rem);
+  aspect-ratio: 1;
+  border-radius: inherit;
+  background: var(--shell-background);
+  content: '';
+}
+
+.analytics-focus-card__indicator span {
+  z-index: 1;
+  grid-area: 1 / 1;
+  color: var(--shell-white);
+  font-size: var(--shell-font-sm);
+  font-weight: var(--shell-weight-bold);
+}
+
+.analytics-focus-card > div:last-child {
+  display: grid;
+  gap: var(--shell-space-xs);
+  min-width: 0;
+}
+
+.analytics-growth-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--shell-space-md);
+}
+
+.analytics-growth-card {
+  min-height: 13rem;
+  align-content: start;
+}
+
+.analytics-growth-card__header strong {
+  color: var(--shell-cyan);
+  font-size: var(--shell-font-xl);
+}
+
+.analytics-growth-card b {
+  color: var(--shell-cyan);
+  font-size: var(--shell-font-xl);
+}
+
+.analytics-learning-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.analytics-learning-item {
+  display: grid;
+  gap: var(--shell-space-sm);
+}
+
+.analytics-learning-item__meta > div {
+  display: grid;
+  gap: var(--shell-space-xs);
+}
+
+.analytics-learning-item__meta span {
+  color: var(--shell-white);
+  font-size: var(--shell-font-sm);
+  font-weight: var(--shell-weight-semibold);
+}
+
+.analytics-roadmap-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(18rem, 0.82fr);
+  gap: var(--shell-space-lg);
+}
+
+.analytics-roadmap {
+  display: grid;
+  gap: var(--shell-space-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.analytics-roadmap li {
+  position: relative;
+  padding-left: var(--shell-space-xl);
+}
+
+.analytics-roadmap li::before {
+  position: absolute;
+  top: 0;
+  bottom: calc(-1 * var(--shell-space-md));
+  left: 0.35rem;
+  width: 1px;
+  background: var(--shell-border);
+  content: '';
+}
+
+.analytics-roadmap li:last-child::before {
+  bottom: 50%;
+}
+
+.analytics-roadmap li::after {
+  position: absolute;
+  top: var(--shell-space-lg);
+  left: 0;
+  width: 0.72rem;
+  aspect-ratio: 1;
+  border-radius: var(--shell-radius-full);
+  background: var(--shell-cyan);
+  box-shadow: var(--shell-glow-subtle);
+  content: '';
+}
+
+.analytics-roadmap-card--next {
+  border-color: rgb(0 229 255 / 0.24);
+}
+
+.analytics-roadmap-card--long-term {
+  border-color: rgb(104 240 178 / 0.3);
+}
+
+.analytics-insights {
+  align-content: start;
+}
+
+.analytics-insights dl {
+  margin: 0;
+}
+
+.analytics-insights dd {
+  color: var(--shell-cyan);
+  font-size: var(--shell-font-lg);
+}
+
+.analytics-insights p {
+  margin-top: var(--shell-space-xs);
+}
+
+@media (max-width: 72rem) {
+  .analytics-command-center__split,
+  .analytics-radar,
+  .analytics-roadmap-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-focus-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 60rem) {
+  .analytics-metrics,
+  .analytics-growth-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .analytics-summary__body,
+  .analytics-progress-panel__split {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 40rem) {
+  .analytics-metrics,
+  .analytics-radar__legend,
+  .analytics-focus-grid,
+  .analytics-growth-grid,
+  .analytics-learning-list {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-metric,
+  .analytics-growth-card {
+    min-height: auto;
+  }
+
+  .analytics-signal__meta,
+  .analytics-learning-item__meta {
+    display: grid;
+  }
+
+  .analytics-focus-card {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-roadmap li {
+    padding-left: var(--shell-space-lg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .analytics-summary,
+  .analytics-metric,
+  .analytics-signal-panel,
+  .analytics-progress-panel,
+  .analytics-radar-panel,
+  .analytics-focus-card,
+  .analytics-growth-card,
+  .analytics-roadmap-card,
+  .analytics-insights,
+  .analytics-track span {
+    transition: none;
+  }
+
+  .analytics-summary:hover,
+  .analytics-metric:hover,
+  .analytics-signal-panel:hover,
+  .analytics-progress-panel:hover,
+  .analytics-radar-panel:hover,
+  .analytics-focus-card:hover,
+  .analytics-growth-card:hover,
+  .analytics-roadmap-card:hover,
+  .analytics-insights:hover {
+    transform: none;
+  }
+}

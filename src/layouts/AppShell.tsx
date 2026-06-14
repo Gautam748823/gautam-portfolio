@@ -12,6 +12,7 @@ import {
   socialLoader,
   timelineLoader,
 } from '@/data';
+import { analyticsLoader } from '@/data/loaders/analyticsLoader';
 import {
   colors,
   glows,
@@ -25,6 +26,7 @@ import {
 } from '@/design-system/tokens';
 import type { TokenStyle } from '@/design-system/styleTypes';
 import { AboutSection } from '@/features/about';
+import { AnalyticsCommandCenter } from '@/features/analytics';
 import { AchievementIntelligenceDashboard } from '@/features/achievements';
 import { AIAssistantPanel } from '@/features/assistant';
 import { ContactCommandCenter } from '@/features/contact';
@@ -49,6 +51,7 @@ import type {
   SocialLink,
   TimelineData,
 } from '@/types';
+import type { AnalyticsDashboardContent } from '@/types/Analytics';
 import { BackgroundLayers } from './BackgroundLayers';
 import { Footer } from './Footer';
 import { Navbar } from './Navbar';
@@ -56,6 +59,9 @@ import './shell.css';
 
 export function AppShell() {
   const [about, setAbout] = useState<AboutContent | null>(null);
+  const [analyticsDashboard, setAnalyticsDashboard] = useState<AnalyticsDashboardContent | null>(
+    null,
+  );
   const [achievementDashboard, setAchievementDashboard] =
     useState<AchievementDashboardContent | null>(null);
   const [contact, setContact] = useState<ContactContent | null>(null);
@@ -73,6 +79,7 @@ export function AppShell() {
 
     void Promise.all([
       aboutLoader.getAll(),
+      analyticsLoader.getDashboard(),
       achievementDashboardLoader.getDashboard(),
       contactLoader.getAll(),
       githubLoader.getDashboard(),
@@ -85,6 +92,7 @@ export function AppShell() {
     ]).then(
       ([
         aboutData,
+        analyticsDashboardData,
         achievementDashboardData,
         contactData,
         githubDashboardData,
@@ -97,6 +105,7 @@ export function AppShell() {
       ]) => {
         if (isActive) {
           setAbout(aboutData);
+          setAnalyticsDashboard(analyticsDashboardData);
           setAchievementDashboard(achievementDashboardData);
           setContact(contactData);
           setGithubDashboard(githubDashboardData);
@@ -186,6 +195,7 @@ export function AppShell() {
         <ProjectsSection projects={projects} />
         <GitHubIntelligenceDashboard dashboard={githubDashboard} />
         <RecruiterModeSection recruiterMode={recruiterMode} />
+        <AnalyticsCommandCenter dashboard={analyticsDashboard} />
         <AchievementIntelligenceDashboard dashboard={achievementDashboard} />
         <ContactCommandCenter contact={contact} />
       </main>
