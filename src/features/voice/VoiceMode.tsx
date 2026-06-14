@@ -52,12 +52,12 @@ export function VoiceMode() {
   const [commandData, setCommandData] = useState<VoiceCommandData | null>(null);
   const [isListening, setIsListening] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [isSupported, setIsSupported] = useState(false);
   const [lastCommand, setLastCommand] = useState('');
   const [response, setResponse] = useState('');
   const [speechEnabled, setSpeechEnabled] = useState(true);
   const [status, setStatus] = useState<VoiceStatus>('idle');
   const [transcript, setTranscript] = useState('');
+  const [isSupported] = useState(() => Boolean(getSpeechRecognitionConstructor()));
   const launcherRef = useRef<HTMLButtonElement | null>(null);
   const recognitionRef = useRef<SpeechRecognitionLike | null>(null);
 
@@ -70,8 +70,6 @@ export function VoiceMode() {
         setResponse(commands.system.idleMessage);
       }
     });
-
-    setIsSupported(Boolean(getSpeechRecognitionConstructor()));
 
     return () => {
       isActive = false;

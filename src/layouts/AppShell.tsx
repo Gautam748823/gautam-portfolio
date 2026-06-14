@@ -13,6 +13,7 @@ import {
   timelineLoader,
 } from '@/data';
 import { analyticsLoader } from '@/data/loaders/analyticsLoader';
+import { projectGalaxyLoader } from '@/data/loaders/projectGalaxyLoader';
 import {
   colors,
   glows,
@@ -32,6 +33,7 @@ import { AIAssistantPanel } from '@/features/assistant';
 import { ContactCommandCenter } from '@/features/contact';
 import { GitHubIntelligenceDashboard } from '@/features/github';
 import { BootSequence, useIntroExperience } from '@/features/intro';
+import { ProjectGalaxy } from '@/features/project-galaxy';
 import { ProjectsSection } from '@/features/projects';
 import { RecruiterModeSection } from '@/features/recruiter';
 import { SkillsSection } from '@/features/skills';
@@ -52,6 +54,7 @@ import type {
   TimelineData,
 } from '@/types';
 import type { AnalyticsDashboardContent } from '@/types/Analytics';
+import type { ProjectGalaxyData } from '@/types/ProjectGalaxy';
 import { BackgroundLayers } from './BackgroundLayers';
 import { Footer } from './Footer';
 import { Navbar } from './Navbar';
@@ -67,6 +70,7 @@ export function AppShell() {
   const [contact, setContact] = useState<ContactContent | null>(null);
   const [githubDashboard, setGithubDashboard] = useState<GitHubDashboardContent | null>(null);
   const [portfolio, setPortfolio] = useState<PortfolioMetadata | null>(null);
+  const [projectGalaxy, setProjectGalaxy] = useState<ProjectGalaxyData | null>(null);
   const [projects, setProjects] = useState<readonly ProjectIntelligence[]>([]);
   const [recruiterMode, setRecruiterMode] = useState<RecruiterModeContent | null>(null);
   const [skillGraph, setSkillGraph] = useState<SkillGraphData | null>(null);
@@ -84,6 +88,7 @@ export function AppShell() {
       contactLoader.getAll(),
       githubLoader.getDashboard(),
       portfolioLoader.getAll(),
+      projectGalaxyLoader.getGalaxy(),
       projectIntelligenceLoader.getAllProjects(),
       recruiterModeLoader.getRecruiterMode(),
       skillGraphLoader.getAll(),
@@ -97,6 +102,7 @@ export function AppShell() {
         contactData,
         githubDashboardData,
         portfolioData,
+        projectGalaxyData,
         projectData,
         recruiterModeData,
         skillGraphData,
@@ -110,6 +116,7 @@ export function AppShell() {
           setContact(contactData);
           setGithubDashboard(githubDashboardData);
           setPortfolio(portfolioData);
+          setProjectGalaxy(projectGalaxyData);
           setProjects(projectData);
           setRecruiterMode(recruiterModeData);
           setSkillGraph(skillGraphData);
@@ -193,6 +200,7 @@ export function AppShell() {
         <JourneyTimeline timeline={timeline} />
         <SkillsSection skillGraph={skillGraph} />
         <ProjectsSection projects={projects} />
+        <ProjectGalaxy galaxy={projectGalaxy} />
         <GitHubIntelligenceDashboard dashboard={githubDashboard} />
         <RecruiterModeSection recruiterMode={recruiterMode} />
         <AnalyticsCommandCenter dashboard={analyticsDashboard} />
