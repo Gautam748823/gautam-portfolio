@@ -22,7 +22,14 @@
     {
       "id": "show_ai_projects",
       "label": "AI Projects",
-      "keywords": ["ai projects", "artificial intelligence projects", "computer vision", "machine learning", "llm", "vision projects"],
+      "keywords": [
+        "ai projects",
+        "artificial intelligence projects",
+        "computer vision",
+        "machine learning",
+        "llm",
+        "vision projects"
+      ],
       "responseId": "show_ai_projects_response"
     },
     {
@@ -40,7 +47,13 @@
     {
       "id": "show_achievements",
       "label": "Achievements",
-      "keywords": ["achievements", "proof", "milestones", "accomplishments", "achievement dashboard"],
+      "keywords": [
+        "achievements",
+        "proof",
+        "milestones",
+        "accomplishments",
+        "achievement dashboard"
+      ],
       "responseId": "show_achievements_response"
     },
     {
@@ -97,7 +110,11 @@
       "suggestions": [
         { "id": "greeting-about", "label": "About", "intentId": "who_is_gautam" },
         { "id": "greeting-projects", "label": "Projects", "intentId": "show_projects" },
-        { "id": "greeting-recruiter", "label": "Recruiter Mode", "intentId": "show_recruiter_profile" }
+        {
+          "id": "greeting-recruiter",
+          "label": "Recruiter Mode",
+          "intentId": "show_recruiter_profile"
+        }
       ]
     },
     {
@@ -123,12 +140,13 @@
       "summary": "Gautam's project layer focuses on applied AI, computer vision, backend intelligence, and full-stack product systems.",
       "bullets": [
         "AI Meeting & Lecture Note Taker: transforms spoken sessions into structured notes and summaries.",
-        "Helmet Violation Detection System: computer vision pipeline for rider safety compliance.",
         "Wildlife Conservation & Species Identification: confidence-ranked image intelligence for conservation workflows.",
         "AI Plant Disease Detection: image-based crop health screening with practical guidance.",
         "CrowdScope Crowd Monitoring System: density and safety awareness concept for operational dashboards."
       ],
-      "links": [{ "id": "projects-link", "label": "Open Projects", "href": "#projects", "external": false }],
+      "links": [
+        { "id": "projects-link", "label": "Open Projects", "href": "#projects", "external": false }
+      ],
       "suggestions": [
         { "id": "projects-ai", "label": "Show AI projects", "intentId": "show_ai_projects" },
         { "id": "projects-github", "label": "Show GitHub", "intentId": "show_github" }
@@ -141,11 +159,17 @@
       "summary": "The AI work is centered on useful workflows rather than model demos: summarization, transcription, object detection, classification, and confidence-aware interfaces.",
       "bullets": [
         "AI Meeting & Lecture Note Taker uses transcription and LLM-style summarization workflows.",
-        "Helmet Violation Detection applies YOLOv8 and OpenCV for object detection.",
         "Wildlife Species Identification and Plant Disease Detection use computer vision classification patterns.",
         "CrowdScope connects AI-assisted counting signals with backend and dashboard architecture."
       ],
-      "links": [{ "id": "ai-projects-link", "label": "Open Projects", "href": "#projects", "external": false }],
+      "links": [
+        {
+          "id": "ai-projects-link",
+          "label": "Open Projects",
+          "href": "#projects",
+          "external": false
+        }
+      ],
       "suggestions": [
         { "id": "ai-skills", "label": "AI skills", "intentId": "show_skills" },
         { "id": "ai-focus", "label": "Current focus", "intentId": "current_focus" }
@@ -162,7 +186,9 @@
         "AI: LLM workflows, prompt design, RAG, embeddings, agents, evaluation.",
         "Data and systems: PostgreSQL, MongoDB, schema design, architecture, scalability, reliability."
       ],
-      "links": [{ "id": "skills-link", "label": "Open Skills", "href": "#skills", "external": false }],
+      "links": [
+        { "id": "skills-link", "label": "Open Skills", "href": "#skills", "external": false }
+      ],
       "suggestions": [
         { "id": "skills-tech", "label": "Technologies", "intentId": "technologies" },
         { "id": "skills-achievements", "label": "Achievements", "intentId": "show_achievements" }
@@ -178,7 +204,9 @@
         "Active focus areas include AI learning loops and full-stack engineering practice.",
         "The roadmap points toward deeper project intelligence, skills mapping, and production-ready systems."
       ],
-      "links": [{ "id": "journey-link", "label": "Open Journey", "href": "#journey", "external": false }],
+      "links": [
+        { "id": "journey-link", "label": "Open Journey", "href": "#journey", "external": false }
+      ],
       "suggestions": [
         { "id": "journey-focus", "label": "Current focus", "intentId": "current_focus" },
         { "id": "journey-achievements", "label": "Achievements", "intentId": "show_achievements" }
@@ -190,13 +218,24 @@
       "type": "list",
       "summary": "The achievement layer highlights applied projects, portfolio execution, technology breadth, academic progress, and current learning momentum.",
       "bullets": [
-        "Project proof spans AI note-taking, helmet detection, wildlife classification, and plant disease detection.",
+        "Project proof spans AI note-taking, wildlife classification, plant disease detection, and crowd monitoring.",
         "Learning signals include AI engineering, full-stack development, system design, computer vision, and backend engineering.",
         "Future milestones include open-source contributions, hackathons, research publication, SaaS launch, and advanced AI systems."
       ],
-      "links": [{ "id": "achievements-link", "label": "Open Achievements", "href": "#achievements", "external": false }],
+      "links": [
+        {
+          "id": "achievements-link",
+          "label": "Open Achievements",
+          "href": "#achievements",
+          "external": false
+        }
+      ],
       "suggestions": [
-        { "id": "achievements-recruiter", "label": "Recruiter profile", "intentId": "show_recruiter_profile" },
+        {
+          "id": "achievements-recruiter",
+          "label": "Recruiter profile",
+          "intentId": "show_recruiter_profile"
+        },
         { "id": "achievements-projects", "label": "Projects", "intentId": "show_projects" }
       ]
     },
@@ -211,8 +250,18 @@
         "Technology distribution includes TypeScript, JavaScript, Python, React, and Node."
       ],
       "links": [
-        { "id": "github-section-link", "label": "Open GitHub Section", "href": "#github", "external": false },
-        { "id": "github-profile-link", "label": "Open GitHub Profile", "href": "https://github.com/Gautam748823", "external": true }
+        {
+          "id": "github-section-link",
+          "label": "Open GitHub Section",
+          "href": "#github",
+          "external": false
+        },
+        {
+          "id": "github-profile-link",
+          "label": "Open GitHub Profile",
+          "href": "https://github.com/Gautam748823",
+          "external": true
+        }
       ],
       "suggestions": [
         { "id": "github-projects", "label": "Projects", "intentId": "show_projects" },
@@ -230,13 +279,32 @@
         "Status: Available for Opportunities."
       ],
       "links": [
-        { "id": "contact-section-link", "label": "Open Contact", "href": "#contact", "external": false },
-        { "id": "email-link", "label": "Email Gautam", "href": "mailto:gautam22017@gmail.com", "external": false },
-        { "id": "linkedin-link", "label": "LinkedIn", "href": "https://www.linkedin.com/in/gautam4875/", "external": true }
+        {
+          "id": "contact-section-link",
+          "label": "Open Contact",
+          "href": "#contact",
+          "external": false
+        },
+        {
+          "id": "email-link",
+          "label": "Email Gautam",
+          "href": "mailto:gautam22017@gmail.com",
+          "external": false
+        },
+        {
+          "id": "linkedin-link",
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/in/gautam4875/",
+          "external": true
+        }
       ],
       "suggestions": [
         { "id": "contact-resume", "label": "Resume", "intentId": "show_resume" },
-        { "id": "contact-recruiter", "label": "Recruiter profile", "intentId": "show_recruiter_profile" }
+        {
+          "id": "contact-recruiter",
+          "label": "Recruiter profile",
+          "intentId": "show_recruiter_profile"
+        }
       ]
     },
     {
@@ -246,15 +314,29 @@
       "summary": "The portfolio includes Gautam's resume as a local PDF asset for recruiter review.",
       "bullets": [
         "Resume intelligence notes B.Tech Computer Science & Engineering, graduation year 2027.",
-        "The profile highlights 5+ projects and 15+ core technologies.",
+        "The profile highlights 4 projects and 15+ core technologies.",
         "Focus areas include AI Systems, Full Stack Engineering, Backend Systems, and Computer Vision."
       ],
       "links": [
-        { "id": "resume-download-link", "label": "Open Resume", "href": "/Gautam_Kumar_CV_final.pdf", "external": true },
-        { "id": "contact-for-resume-link", "label": "Open Contact", "href": "#contact", "external": false }
+        {
+          "id": "resume-download-link",
+          "label": "Open Resume",
+          "href": "/Gautam_Kumar_CV_final.pdf",
+          "external": true
+        },
+        {
+          "id": "contact-for-resume-link",
+          "label": "Open Contact",
+          "href": "#contact",
+          "external": false
+        }
       ],
       "suggestions": [
-        { "id": "resume-recruiter", "label": "Recruiter Mode", "intentId": "show_recruiter_profile" },
+        {
+          "id": "resume-recruiter",
+          "label": "Recruiter Mode",
+          "intentId": "show_recruiter_profile"
+        },
         { "id": "resume-contact", "label": "Contact", "intentId": "show_contact" }
       ]
     },
@@ -265,10 +347,17 @@
       "summary": "Recruiter Mode presents Gautam as an AI and full-stack engineering candidate with practical intelligent-system project evidence.",
       "bullets": [
         "Candidate focus: AI Systems, Full Stack Development, and Computer Vision.",
-        "Hiring snapshot: 5+ projects, 15+ technologies, 18 GitHub repositories, and phased portfolio execution.",
+        "Hiring snapshot: 4 projects, 15+ technologies, 18 GitHub repositories, and phased portfolio execution.",
         "Top strengths include AI engineering, frontend engineering, system design, computer vision, and problem solving."
       ],
-      "links": [{ "id": "recruiter-link", "label": "Open Recruiter Mode", "href": "#recruiter", "external": false }],
+      "links": [
+        {
+          "id": "recruiter-link",
+          "label": "Open Recruiter Mode",
+          "href": "#recruiter",
+          "external": false
+        }
+      ],
       "suggestions": [
         { "id": "recruiter-resume", "label": "Resume", "intentId": "show_resume" },
         { "id": "recruiter-contact", "label": "Contact", "intentId": "show_contact" }
@@ -287,7 +376,12 @@
       ],
       "links": [
         { "id": "focus-about-link", "label": "Open About", "href": "#about", "external": false },
-        { "id": "focus-recruiter-link", "label": "Open Recruiter Mode", "href": "#recruiter", "external": false }
+        {
+          "id": "focus-recruiter-link",
+          "label": "Open Recruiter Mode",
+          "href": "#recruiter",
+          "external": false
+        }
       ],
       "suggestions": [
         { "id": "focus-ai", "label": "AI projects", "intentId": "show_ai_projects" },
@@ -305,7 +399,14 @@
         "AI and vision: LLMs, prompt design, RAG, embeddings, Whisper, TensorFlow, YOLOv8, OpenCV.",
         "Data and delivery: PostgreSQL, MongoDB, Supabase, Firestore, GitHub Actions, Docker, Vercel."
       ],
-      "links": [{ "id": "technologies-skills-link", "label": "Open Skills", "href": "#skills", "external": false }],
+      "links": [
+        {
+          "id": "technologies-skills-link",
+          "label": "Open Skills",
+          "href": "#skills",
+          "external": false
+        }
+      ],
       "suggestions": [
         { "id": "tech-projects", "label": "Projects", "intentId": "show_projects" },
         { "id": "tech-github", "label": "GitHub", "intentId": "show_github" }
@@ -327,11 +428,36 @@
     }
   ],
   "suggestedQuestions": [
-    { "id": "question-about", "label": "Who is Gautam?", "prompt": "Who is Gautam?", "intentId": "who_is_gautam" },
-    { "id": "question-projects", "label": "Show projects", "prompt": "Show projects", "intentId": "show_projects" },
-    { "id": "question-ai-projects", "label": "Show AI projects", "prompt": "Show AI projects", "intentId": "show_ai_projects" },
-    { "id": "question-tech", "label": "Technologies", "prompt": "What technologies does Gautam use?", "intentId": "technologies" },
-    { "id": "question-focus", "label": "Current focus", "prompt": "What is Gautam currently learning?", "intentId": "current_focus" }
+    {
+      "id": "question-about",
+      "label": "Who is Gautam?",
+      "prompt": "Who is Gautam?",
+      "intentId": "who_is_gautam"
+    },
+    {
+      "id": "question-projects",
+      "label": "Show projects",
+      "prompt": "Show projects",
+      "intentId": "show_projects"
+    },
+    {
+      "id": "question-ai-projects",
+      "label": "Show AI projects",
+      "prompt": "Show AI projects",
+      "intentId": "show_ai_projects"
+    },
+    {
+      "id": "question-tech",
+      "label": "Technologies",
+      "prompt": "What technologies does Gautam use?",
+      "intentId": "technologies"
+    },
+    {
+      "id": "question-focus",
+      "label": "Current focus",
+      "prompt": "What is Gautam currently learning?",
+      "intentId": "current_focus"
+    }
   ],
   "quickActions": [
     { "id": "quick-about", "label": "About", "intentId": "who_is_gautam" },

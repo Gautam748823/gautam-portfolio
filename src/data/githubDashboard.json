@@ -52,7 +52,7 @@
     {
       "id": "active-projects",
       "label": "Active Projects",
-      "value": "5+",
+      "value": "4",
       "description": "AI and full-stack systems under active development."
     },
     {
@@ -116,15 +116,6 @@
       "category": "AI System",
       "description": "Speech-to-notes workflow for transcription, summarization, and structured review.",
       "technologies": ["React", "FastAPI", "Whisper", "Supabase", "LLMs"],
-      "githubUrl": "https://github.com/Gautam748823",
-      "status": "Active"
-    },
-    {
-      "id": "helmet-violation-detection-system",
-      "name": "Helmet Violation Detection System",
-      "category": "Computer Vision",
-      "description": "Object detection pipeline for rider and helmet compliance monitoring.",
-      "technologies": ["YOLOv8", "OpenCV", "Python", "FastAPI", "React"],
       "githubUrl": "https://github.com/Gautam748823",
       "status": "Active"
     },

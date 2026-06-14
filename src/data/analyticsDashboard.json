@@ -39,14 +39,14 @@
     {
       "id": "total-projects",
       "label": "Total Projects",
-      "value": "5+",
+      "value": "4",
       "description": "Applied systems spanning AI, vision, backend, and product engineering.",
       "tone": "cyan"
     },
     {
       "id": "ai-projects",
       "label": "AI Projects",
-      "value": "3",
+      "value": "4",
       "description": "Projects with model, inference, summarization, or classification workflows.",
       "tone": "positive"
     },
@@ -153,29 +153,29 @@
     {
       "id": "ai",
       "label": "AI Systems",
-      "count": 3,
-      "percentage": 60,
+      "count": 4,
+      "percentage": 100,
       "description": "Primary project concentration."
     },
     {
       "id": "full-stack",
       "label": "Full Stack",
       "count": 4,
-      "percentage": 80,
+      "percentage": 100,
       "description": "Most projects connect interface and service layers."
     },
     {
       "id": "computer-vision",
       "label": "Computer Vision",
-      "count": 2,
-      "percentage": 40,
+      "count": 3,
+      "percentage": 75,
       "description": "Applied visual detection and classification work."
     },
     {
       "id": "backend",
       "label": "Backend Systems",
       "count": 3,
-      "percentage": 60,
+      "percentage": 75,
       "description": "API, ingestion, and data-oriented project components."
     }
   ],

@@ -1,0 +1,280 @@
+{
+  "section": {
+    "eyebrow": "Mission Control",
+    "title": "Project Galaxy",
+    "description": "A visual map of Gautam's project universe, shared engineering domains, and progression toward complete AI products."
+  },
+  "labels": {
+    "overviewLabel": "Project Galaxy overview",
+    "filtersLabel": "Filter Project Galaxy by domain",
+    "canvasLabel": "Interactive project relationship map",
+    "detailsEyebrow": "Project intelligence",
+    "statusLabel": "Status",
+    "domainLabel": "Primary domain",
+    "technologiesLabel": "Technologies",
+    "achievementsLabel": "Key achievements",
+    "architectureLabel": "Architecture summary",
+    "roadmapLabel": "Future roadmap",
+    "legendEyebrow": "Relationship legend",
+    "legendTitle": "Shared engineering signals",
+    "evolutionEyebrow": "Engineering evolution",
+    "evolutionTitle": "Capability progression",
+    "evolutionDescription": "Each system added a new layer of technical judgment, moving from focused classification toward connected AI product architecture.",
+    "relationshipLabel": "relationship",
+    "selectProjectLabel": "Select project"
+  },
+  "overview": [
+    {
+      "id": "visible-projects",
+      "label": "Visible Projects",
+      "kind": "total"
+    },
+    {
+      "id": "ai-projects",
+      "label": "AI Projects",
+      "kind": "ai"
+    },
+    {
+      "id": "research-projects",
+      "label": "Research Projects",
+      "kind": "research"
+    },
+    {
+      "id": "full-stack-projects",
+      "label": "Full Stack Projects",
+      "kind": "full-stack"
+    },
+    {
+      "id": "active-systems",
+      "label": "Active Systems",
+      "kind": "active"
+    }
+  ],
+  "domains": [
+    {
+      "id": "all",
+      "label": "All",
+      "value": "All"
+    },
+    {
+      "id": "ai",
+      "label": "AI",
+      "value": "AI"
+    },
+    {
+      "id": "research",
+      "label": "Research",
+      "value": "Research"
+    },
+    {
+      "id": "computer-vision",
+      "label": "Computer Vision",
+      "value": "Computer Vision"
+    },
+    {
+      "id": "full-stack",
+      "label": "Full Stack",
+      "value": "Full Stack"
+    },
+    {
+      "id": "backend",
+      "label": "Backend",
+      "value": "Backend"
+    }
+  ],
+  "projects": [
+    {
+      "id": "ai-plant-disease-detection",
+      "name": "AI Plant Disease Detection",
+      "shortName": "Plant Disease AI",
+      "status": "prototype",
+      "description": "An image-classification workflow that identifies likely plant diseases and pairs model output with practical care guidance.",
+      "primaryDomain": "Computer Vision",
+      "domains": ["AI", "Computer Vision", "Full Stack"],
+      "relationshipTypes": ["AI Systems", "Computer Vision", "Full Stack"],
+      "technologies": ["React", "TensorFlow", "FastAPI", "OpenCV", "Python", "TypeScript"],
+      "achievements": [
+        "Built a confidence-aware diagnosis flow",
+        "Connected model output to practical user guidance",
+        "Established the first end-to-end classification pattern"
+      ],
+      "architecture": "Image intake flows through preprocessing and TensorFlow classification before a FastAPI layer returns diagnosis confidence and guidance to a React interface.",
+      "roadmap": "Expand training data, formalize model evaluation, and add reviewed diagnosis history.",
+      "position": {
+        "x": 22,
+        "y": 67
+      }
+    },
+    {
+      "id": "wildlife-conservation-species-identification",
+      "name": "Wildlife Conservation & Species Identification",
+      "shortName": "Wildlife AI",
+      "status": "prototype",
+      "description": "A research-oriented species identification system for confidence-ranked wildlife observations and conservation review.",
+      "primaryDomain": "Research",
+      "domains": ["AI", "Research", "Computer Vision", "Full Stack"],
+      "relationshipTypes": ["AI Systems", "Computer Vision", "Research"],
+      "technologies": ["Python", "TensorFlow", "OpenCV", "React", "FastAPI", "Firestore"],
+      "achievements": [
+        "Designed a human-reviewed research workflow",
+        "Made model confidence legible to non-technical users",
+        "Extended classification into a mission-driven domain"
+      ],
+      "architecture": "Field images pass through preprocessing and a vision model, then confidence-ranked species results and observation metadata are prepared for human review.",
+      "roadmap": "Grow the species dataset, improve difficult-image handling, and add observation analytics.",
+      "position": {
+        "x": 42,
+        "y": 28
+      }
+    },
+    {
+      "id": "ai-meeting-lecture-note-taker",
+      "name": "AI Meeting & Lecture Note Taker",
+      "shortName": "AI Note Taker",
+      "status": "active",
+      "description": "A speech intelligence system that converts long meetings and lectures into searchable transcripts, summaries, and action items.",
+      "primaryDomain": "AI",
+      "domains": ["AI", "Full Stack", "Backend"],
+      "relationshipTypes": ["AI Systems", "Full Stack"],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "FastAPI",
+        "Whisper",
+        "Supabase",
+        "PostgreSQL",
+        "LLMs"
+      ],
+      "achievements": [
+        "Combined transcription and structured summarization",
+        "Designed traceable transcript-first AI output",
+        "Connected frontend, backend, storage, and model orchestration"
+      ],
+      "architecture": "Audio capture feeds a transcription layer, an AI summary engine, structured note storage, and a typed review interface.",
+      "roadmap": "Add retrieval, evaluation, speaker-aware notes, and collaborative review workflows.",
+      "position": {
+        "x": 73,
+        "y": 31
+      }
+    },
+    {
+      "id": "crowdscope-crowd-monitoring-system",
+      "name": "CrowdScope Crowd Monitoring System",
+      "shortName": "CrowdScope",
+      "status": "concept",
+      "description": "An operational monitoring concept that turns crowd inputs into zone-based density signals and dashboard intelligence.",
+      "primaryDomain": "Backend",
+      "domains": ["AI", "Computer Vision", "Full Stack", "Backend"],
+      "relationshipTypes": ["Computer Vision", "Full Stack", "Analytics", "Monitoring"],
+      "technologies": [
+        "Node.js",
+        "FastAPI",
+        "OpenCV",
+        "Firestore",
+        "React",
+        "Supabase",
+        "Analytics"
+      ],
+      "achievements": [
+        "Designed a backend-first monitoring architecture",
+        "Translated detections into operational signals",
+        "Connected ingestion, metrics, and dashboard concerns"
+      ],
+      "architecture": "Sensor or camera inputs enter an API and AI processing layer before zone metrics are stored and surfaced through an operator dashboard.",
+      "roadmap": "Introduce simulation data, privacy boundaries, event streaming, and threshold-based alerts.",
+      "position": {
+        "x": 72,
+        "y": 74
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "plant-wildlife",
+      "source": "ai-plant-disease-detection",
+      "target": "wildlife-conservation-species-identification",
+      "type": "Computer Vision",
+      "label": "Shared classification and image-processing foundation"
+    },
+    {
+      "id": "wildlife-notes",
+      "source": "wildlife-conservation-species-identification",
+      "target": "ai-meeting-lecture-note-taker",
+      "type": "AI Systems",
+      "label": "Evolution from model output to complete AI workflows"
+    },
+    {
+      "id": "notes-crowdscope",
+      "source": "ai-meeting-lecture-note-taker",
+      "target": "crowdscope-crowd-monitoring-system",
+      "type": "Full Stack",
+      "label": "Shared frontend, API, storage, and product architecture"
+    },
+    {
+      "id": "plant-crowdscope",
+      "source": "ai-plant-disease-detection",
+      "target": "crowdscope-crowd-monitoring-system",
+      "type": "Computer Vision",
+      "label": "Vision signals expanded toward monitoring systems"
+    },
+    {
+      "id": "wildlife-crowdscope",
+      "source": "wildlife-conservation-species-identification",
+      "target": "crowdscope-crowd-monitoring-system",
+      "type": "Analytics",
+      "label": "Observation data connected to operational analytics"
+    }
+  ],
+  "legend": [
+    {
+      "id": "ai-systems",
+      "label": "AI Systems"
+    },
+    {
+      "id": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "id": "full-stack",
+      "label": "Full Stack"
+    },
+    {
+      "id": "research",
+      "label": "Research"
+    },
+    {
+      "id": "analytics",
+      "label": "Analytics"
+    },
+    {
+      "id": "monitoring",
+      "label": "Monitoring"
+    }
+  ],
+  "evolution": [
+    {
+      "id": "classification-foundation",
+      "projectId": "ai-plant-disease-detection",
+      "stage": "Classification Foundation",
+      "contribution": "Learned image preprocessing, confidence-aware results, and model-to-interface delivery."
+    },
+    {
+      "id": "research-expansion",
+      "projectId": "wildlife-conservation-species-identification",
+      "stage": "Research Expansion",
+      "contribution": "Added human review, field variability, metadata, and mission-driven AI judgment."
+    },
+    {
+      "id": "product-orchestration",
+      "projectId": "ai-meeting-lecture-note-taker",
+      "stage": "Product Orchestration",
+      "contribution": "Combined model services, persistent data, typed interfaces, and traceable AI output."
+    },
+    {
+      "id": "systems-monitoring",
+      "projectId": "crowdscope-crowd-monitoring-system",
+      "stage": "Systems Monitoring",
+      "contribution": "Extended AI thinking into ingestion, operational metrics, privacy, and monitoring architecture."
+    }
+  ]
+}

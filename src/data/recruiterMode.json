@@ -59,7 +59,7 @@
     {
       "id": "projects",
       "label": "Projects",
-      "value": "5+",
+      "value": "4",
       "description": "AI, computer vision, backend, and full-stack systems."
     },
     {
@@ -132,13 +132,6 @@
       "type": "AI Productivity System",
       "impact": "Converts long spoken sessions into structured notes, summaries, and follow-up intelligence.",
       "stack": ["React", "FastAPI", "Whisper", "Supabase", "LLMs", "TypeScript"]
-    },
-    {
-      "id": "helmet-violation-detection-system",
-      "title": "Helmet Violation Detection System",
-      "type": "Computer Vision",
-      "impact": "Detects rider and helmet compliance from visual input for traffic safety monitoring.",
-      "stack": ["YOLOv8", "OpenCV", "Python", "FastAPI", "React"]
     },
     {
       "id": "wildlife-conservation-species-identification",

@@ -22,7 +22,7 @@
     {
       "id": "projects-built",
       "label": "Projects Built",
-      "value": "4+",
+      "value": "4",
       "description": "Applied AI, computer vision, full stack, and automation systems."
     },
     {
@@ -71,14 +71,6 @@
     }
   ],
   "engineeringMilestones": [
-    {
-      "id": "helmet-violation-detection",
-      "title": "Helmet Violation Detection System",
-      "description": "Computer vision workflow for identifying rider safety compliance from visual input.",
-      "status": "completed",
-      "impact": "Demonstrates applied object detection thinking for civic and safety-oriented use cases.",
-      "technologies": ["Python", "Computer Vision", "OpenCV", "AI"]
-    },
     {
       "id": "ai-meeting-note-taker",
       "title": "AI Meeting & Lecture Note Taker",
@@ -131,7 +123,7 @@
       "title": "Computer Vision",
       "level": "Project proven",
       "description": "Exploring detection and classification workflows for real-world visual intelligence.",
-      "evidence": "Helmet violation, wildlife species, and plant disease systems."
+      "evidence": "Wildlife species, plant disease, and crowd monitoring systems."
     },
     {
       "id": "backend-engineering",

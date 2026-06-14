@@ -30,7 +30,7 @@
     {
       "command": "projects",
       "description": "Show project intelligence",
-      "response": "Project intelligence:\nAI Meeting & Lecture Note Taker\nHelmet Violation Detection System\nWildlife Conservation & Species Identification\nAI Plant Disease Detection\nCrowdScope Crowd Monitoring System",
+      "response": "Project intelligence:\nAI Meeting & Lecture Note Taker\nWildlife Conservation & Species Identification\nAI Plant Disease Detection\nCrowdScope Crowd Monitoring System",
       "suggestions": ["skills", "github", "recruiter"]
     },
     {
@@ -66,7 +66,7 @@
     {
       "command": "resume",
       "description": "Show resume access",
-      "response": "Resume access: /Gautam_Kumar_CV_final.pdf\nResume intelligence: B.Tech Computer Science & Engineering, expected graduation 2027, 5+ projects, 15+ core technologies, and focus areas across AI, full stack, backend, and computer vision.",
+      "response": "Resume access: /Gautam_Kumar_CV_final.pdf\nResume intelligence: B.Tech Computer Science & Engineering, expected graduation 2027, 4 projects, 15+ core technologies, and focus areas across AI, full stack, backend, and computer vision.",
       "suggestions": ["recruiter", "contact", "projects"]
     },
     {
