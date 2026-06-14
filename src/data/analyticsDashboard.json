@@ -1,0 +1,359 @@
+{
+  "section": {
+    "eyebrow": "Engineering Intelligence",
+    "title": "Analytics Command Center",
+    "description": "A recruiter-facing executive view of engineering strengths, project distribution, growth signals, and future direction."
+  },
+  "labels": {
+    "summaryEyebrow": "Executive analytics",
+    "summaryTitle": "Profile intelligence summary",
+    "summarySpecializationLabel": "Specialization",
+    "summaryDirectionLabel": "Current direction",
+    "metricsLabel": "Engineering summary metrics",
+    "signalEyebrow": "Signal matrix",
+    "signalTitle": "Recruiter-ready engineering signals",
+    "progressEyebrow": "Technology intelligence",
+    "progressTitle": "Stack distribution and project coverage",
+    "technologyDistributionTitle": "Technology distribution",
+    "projectDistributionTitle": "Project distribution",
+    "radarEyebrow": "Capability radar",
+    "radarTitle": "Engineering capability map",
+    "radarScaleLabel": "Capability scores from zero to one hundred",
+    "focusEyebrow": "Current focus",
+    "focusTitle": "Priority engineering domains",
+    "growthEyebrow": "Growth trajectory",
+    "growthTitle": "Momentum and learning signals",
+    "roadmapEyebrow": "Engineering roadmap",
+    "roadmapTitle": "Current stage to long-term direction",
+    "insightsEyebrow": "Decision insights",
+    "insightsTitle": "What the data says",
+    "scoreSuffix": "out of 100"
+  },
+  "summary": {
+    "headline": "AI-first full-stack engineer translating applied learning into practical product systems.",
+    "description": "Gautam's strongest combined signal is the ability to connect typed frontend experiences, backend architecture, AI workflows, and computer vision concepts into recruiter-readable products.",
+    "specialization": "AI Systems + Full Stack Engineering",
+    "currentDirection": "Product-oriented intelligent systems"
+  },
+  "engineeringMetrics": [
+    {
+      "id": "total-projects",
+      "label": "Total Projects",
+      "value": "5+",
+      "description": "Applied systems spanning AI, vision, backend, and product engineering.",
+      "tone": "cyan"
+    },
+    {
+      "id": "ai-projects",
+      "label": "AI Projects",
+      "value": "3",
+      "description": "Projects with model, inference, summarization, or classification workflows.",
+      "tone": "positive"
+    },
+    {
+      "id": "technologies",
+      "label": "Technologies Used",
+      "value": "15+",
+      "description": "Languages, frameworks, model tooling, databases, and delivery tools.",
+      "tone": "white"
+    },
+    {
+      "id": "repositories",
+      "label": "GitHub Repositories",
+      "value": "18",
+      "description": "Public repositories supporting a growing engineering footprint.",
+      "tone": "cyan"
+    },
+    {
+      "id": "portfolio-phases",
+      "label": "Portfolio Phases",
+      "value": "13",
+      "description": "Completed architecture phases before this analytics layer.",
+      "tone": "positive"
+    },
+    {
+      "id": "cgpa",
+      "label": "Current CGPA",
+      "value": "7.36",
+      "description": "Academic progress alongside continuous project delivery.",
+      "tone": "white"
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "architecture",
+      "label": "Architecture",
+      "score": 84,
+      "description": "Modular feature boundaries, typed contracts, and data-driven composition."
+    },
+    {
+      "id": "frontend",
+      "label": "Frontend",
+      "score": 88,
+      "description": "Responsive React interfaces with accessible interaction and visual polish."
+    },
+    {
+      "id": "backend",
+      "label": "Backend",
+      "score": 79,
+      "description": "API-centered thinking across FastAPI, Node, data stores, and service design."
+    },
+    {
+      "id": "ai-engineering",
+      "label": "AI Engineering",
+      "score": 87,
+      "description": "Applied model workflows focused on useful product outcomes."
+    },
+    {
+      "id": "computer-vision",
+      "label": "Computer Vision",
+      "score": 83,
+      "description": "Detection and classification concepts using OpenCV and YOLO-style pipelines."
+    },
+    {
+      "id": "system-design",
+      "label": "System Design",
+      "score": 82,
+      "description": "Structured decomposition of complex product ideas into maintainable systems."
+    }
+  ],
+  "technologyMetrics": [
+    {
+      "id": "typescript-react",
+      "name": "TypeScript + React",
+      "percentage": 30,
+      "category": "Frontend systems"
+    },
+    {
+      "id": "python-ai",
+      "name": "Python + AI Tooling",
+      "percentage": 26,
+      "category": "AI engineering"
+    },
+    {
+      "id": "fastapi-node",
+      "name": "FastAPI + Node",
+      "percentage": 18,
+      "category": "Backend systems"
+    },
+    {
+      "id": "opencv-yolo",
+      "name": "OpenCV + YOLO",
+      "percentage": 16,
+      "category": "Computer vision"
+    },
+    {
+      "id": "data-cloud",
+      "name": "Data + Cloud Tools",
+      "percentage": 10,
+      "category": "Infrastructure"
+    }
+  ],
+  "projectMetrics": [
+    {
+      "id": "ai",
+      "label": "AI Systems",
+      "count": 3,
+      "percentage": 60,
+      "description": "Primary project concentration."
+    },
+    {
+      "id": "full-stack",
+      "label": "Full Stack",
+      "count": 4,
+      "percentage": 80,
+      "description": "Most projects connect interface and service layers."
+    },
+    {
+      "id": "computer-vision",
+      "label": "Computer Vision",
+      "count": 2,
+      "percentage": 40,
+      "description": "Applied visual detection and classification work."
+    },
+    {
+      "id": "backend",
+      "label": "Backend Systems",
+      "count": 3,
+      "percentage": 60,
+      "description": "API, ingestion, and data-oriented project components."
+    }
+  ],
+  "learningMetrics": [
+    {
+      "id": "academic",
+      "label": "Academic Progress",
+      "value": "B.Tech CSE",
+      "detail": "Expected graduation in 2027",
+      "progress": 72
+    },
+    {
+      "id": "active-tracks",
+      "label": "Active Learning Tracks",
+      "value": "4",
+      "detail": "AI systems, backend, computer vision, and system design",
+      "progress": 82
+    },
+    {
+      "id": "certifications",
+      "label": "Certifications Planned",
+      "value": "3",
+      "detail": "Cloud, applied AI, and backend engineering",
+      "progress": 35
+    },
+    {
+      "id": "research",
+      "label": "Research Areas",
+      "value": "3",
+      "detail": "Vision, intelligent workflows, and conservation technology",
+      "progress": 68
+    }
+  ],
+  "growthMetrics": [
+    {
+      "id": "delivery",
+      "label": "Delivery Cadence",
+      "value": "13 phases",
+      "trend": "accelerating",
+      "description": "Consistent phased delivery from foundation through advanced interaction systems."
+    },
+    {
+      "id": "complexity",
+      "label": "System Complexity",
+      "value": "Multi-layer",
+      "trend": "upward",
+      "description": "Progression from static presentation to typed, modular command-center features."
+    },
+    {
+      "id": "ai-depth",
+      "label": "AI Product Depth",
+      "value": "Applied",
+      "trend": "upward",
+      "description": "Focus is moving from model concepts toward complete user workflows."
+    },
+    {
+      "id": "learning",
+      "label": "Learning Momentum",
+      "value": "Continuous",
+      "trend": "steady",
+      "description": "Academic study and portfolio implementation reinforce one another."
+    }
+  ],
+  "focusMetrics": [
+    {
+      "id": "ai-systems",
+      "label": "AI Systems",
+      "priority": 94,
+      "status": "Primary",
+      "description": "Building useful AI workflows with structured, confidence-aware outputs."
+    },
+    {
+      "id": "full-stack",
+      "label": "Full Stack Engineering",
+      "priority": 90,
+      "status": "Primary",
+      "description": "Connecting polished interfaces to dependable API and data layers."
+    },
+    {
+      "id": "backend",
+      "label": "Backend Systems",
+      "priority": 82,
+      "status": "Deepening",
+      "description": "Strengthening service architecture, persistence, and system reliability."
+    },
+    {
+      "id": "computer-vision",
+      "label": "Computer Vision",
+      "priority": 86,
+      "status": "Active",
+      "description": "Advancing detection and classification projects toward deployment."
+    },
+    {
+      "id": "product",
+      "label": "Product Development",
+      "priority": 88,
+      "status": "Expanding",
+      "description": "Turning technical capability into coherent, usable product experiences."
+    }
+  ],
+  "roadmapMetrics": [
+    {
+      "id": "current",
+      "stage": "Current Stage",
+      "title": "Applied engineering foundation",
+      "description": "Consolidating AI, full-stack, backend, and computer vision skills through portfolio-grade systems.",
+      "status": "current"
+    },
+    {
+      "id": "next-ai",
+      "stage": "Next Milestone",
+      "title": "Production-ready AI workflows",
+      "description": "Improve evaluation, confidence handling, observability, and user feedback loops.",
+      "status": "next"
+    },
+    {
+      "id": "next-backend",
+      "stage": "Next Milestone",
+      "title": "Deeper backend reliability",
+      "description": "Advance API testing, data modeling, caching, deployment, and scalable service patterns.",
+      "status": "next"
+    },
+    {
+      "id": "long-term",
+      "stage": "Long-Term Direction",
+      "title": "AI product engineer",
+      "description": "Own intelligent products end to end, from system architecture and models to delivery and iteration.",
+      "status": "long-term"
+    }
+  ],
+  "signals": [
+    {
+      "id": "architecture",
+      "label": "Architecture Signal",
+      "value": "Strong",
+      "strength": 84,
+      "description": "Clear module ownership and structured local data contracts."
+    },
+    {
+      "id": "execution",
+      "label": "Execution Signal",
+      "value": "High",
+      "strength": 91,
+      "description": "Sustained phase-by-phase implementation across a broad product surface."
+    },
+    {
+      "id": "ai-involvement",
+      "label": "AI Involvement",
+      "value": "Core",
+      "strength": 89,
+      "description": "AI is a recurring product capability, not an isolated experiment."
+    },
+    {
+      "id": "product-thinking",
+      "label": "Product Thinking",
+      "value": "Growing",
+      "strength": 86,
+      "description": "Technical work is framed around user outcomes and recruiter comprehension."
+    }
+  ],
+  "insights": [
+    {
+      "id": "specialization",
+      "label": "Best-Fit Profile",
+      "value": "AI / Full Stack Intern",
+      "description": "The strongest role fit combines intelligent workflows with end-to-end product implementation."
+    },
+    {
+      "id": "differentiator",
+      "label": "Differentiator",
+      "value": "Cross-domain execution",
+      "description": "Frontend, backend, AI, and vision capabilities appear together in practical systems."
+    },
+    {
+      "id": "trajectory",
+      "label": "Trajectory",
+      "value": "Upward",
+      "description": "Project scope and architecture maturity are increasing with each delivery phase."
+    }
+  ]
+}
